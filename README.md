@@ -72,4 +72,4 @@ cd VITAP
 #### 4. A reference genome file in FASTA format (*ICTV_selected_genomes.fasta*). The VITAP will ramdomly select several reference genomes and add to your genome file. These reference genomes will be performed taxonomic assignments together with yours;
 #### 5. The 2 taxonomic assignment results: *all_lineages.tsv* includes all possible taxonomic lineages; *best_determined_lineages.tsv* includes best-fit taxonomic lineage of a genome;
 #### 6. A log file (*VITAP_run.log*).
-
+## Citation
