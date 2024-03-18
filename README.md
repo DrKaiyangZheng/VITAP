@@ -21,10 +21,17 @@ The VITAP is compiled with Python3 and tested on Mac OSX and Linux CentOS, and c
 ####   · wget  1.21.4
 All these dependences can be installed using Anaconda
 ### Easy way to configuration environment
+For MacOS users,
 ```
-conda env create -f VITAP_environment.yaml -n VITAP
+cd VITAP
+conda env create -f VITAP_conda_environment_OSX.yaml -n VITAP
 ```
-You need to download the database before using VITAP
+For Linux users,
+```
+cd VITAP
+conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
+```
+You need to download or prepare the database before using VITAP
 ```
 wget http://www.XXXXXX.org
 ```
