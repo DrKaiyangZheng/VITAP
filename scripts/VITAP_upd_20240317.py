@@ -239,10 +239,10 @@ def delete_temp_files(path):
 
 def upd():
 	#=======================================================================
-#	args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, update program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: python VITAP_upd.py --vmr raw_VMR.csv -o VMR_reformat.csv\n*******************************************************************\n')
-#	args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
-#	args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
-#	args_parser = args_parser.parse_args()         
+	args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, update program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: python VITAP_upd.py --vmr raw_VMR.csv -o VMR_reformat.csv\n*******************************************************************\n')
+	args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
+	args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
+	args_parser = args_parser.parse_args()         
 
 	# ===== loading initial VMR table =====
 	input_file = args_parser.vmr
