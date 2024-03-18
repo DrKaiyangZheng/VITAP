@@ -73,3 +73,6 @@ cd VITAP
 #### 5. The 2 taxonomic assignment results: *all_lineages.tsv* includes all possible taxonomic lineages; *best_determined_lineages.tsv* includes best-fit taxonomic lineage of a genome;
 #### 6. A log file (*VITAP_run.log*).
 ## Citation
+If VITAP contributes to your work, please cite:
+
+
