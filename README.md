@@ -31,8 +31,6 @@ For Linux users,
 cd VITAP
 conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
 ```
-You need to download or prepare the database before using VITAP
-```
-wget http://www.XXXXXX.org
-```
+You need to download or prepare the database before using VITAP. The pre-built database can be retrived from Figshare repository: `https://doi.org/10.6084/m9.figshare.25426159.v1`. The database is compressed in *zip* format, with the compressed package being approximately 1 GB and about 4.5 GB after decompression. The hash value (MD5) is `2dd77e083b1d35569201cf90adb7373f`. 
+
 
