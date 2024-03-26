@@ -26,10 +26,10 @@ shift
 
 case $COMMAND in
   assignment)
-    python3 "${SCRIPT_DIR}/VITAP_assignment_20240317.py" "$@"
+    python3 "${SCRIPT_DIR}/VITAP_assignment_20240325.py" "$@"
     ;;
   upd)
-    python3 "${SCRIPT_DIR}/VITAP_upd_20240317.py" "$@"
+    python3 "${SCRIPT_DIR}/VITAP_upd_20240325.py" "$@"
     ;;
   *)
     echo "Unknown command: $COMMAND"
