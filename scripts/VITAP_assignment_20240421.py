@@ -172,33 +172,38 @@ def taxonomy_assigning(blast_results_file, ictv_file, genome_cutoff_file, taxon_
 def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_categories):
 	def process_row(row):
 		max_average = -1
+		max_count = 0
 		max_lineage = None
-		max_weight_count = 0
-		max_weight_ratio = 0
 
-		# 如果权重大于等于0.3，计算当前到末尾的平均权重和对应的联合分类层级
+		# If the weight is greater than or equal to 0.3, calculate the average weight from the current point to the end and the corresponding joint taxonomic level
 		for i, weight in enumerate(weights):
 			if row[weight] >= 0.3:
 				average = row[weights[i:]].mean()
 				lineage = ";".join(row[lineages[i:]])
 				return pd.Series([average, lineage])
 
-		# 如果所有权重都小于0.3，寻找平均权重最大的组合
+		# If all weights are less than 0.3, find the combination with the highest average weight
+		total_max_average = -1
 		for i in range(len(weights), 0, -1):
 			current_weights = row[weights[-i:]]
-			if not current_weights.isna().any():  # 确保没有NaN值
+			if not current_weights.isna().any():
 				current_average = current_weights.mean()
-				current_max = current_weights.max()
-				weight_count = len(current_weights)
-				weight_ratio = current_average / current_max if current_max > 0 else 0
+				if current_average > total_max_average:
+					total_max_average = current_average
 
-				if weight_ratio >= 0.95 and weight_count > max_weight_count:
-					max_average = current_average
-					max_lineage = ";".join(row[lineages[-i:]])
-					max_weight_count = weight_count
-					max_weight_ratio = weight_ratio
+		# Repeat the cycle to find combinations that meet the new criteria
+		for i in range(len(weights), 0, -1):
+			current_weights = row[weights[-i:]]
+			if not current_weights.isna().any():
+				current_average = current_weights.mean()
+				current_count = i
+				if current_average >= 0.95 * total_max_average:
+					if current_count > max_count:
+						max_average = current_average
+						max_count = current_count
+						max_lineage = ";".join(row[lineages[-i:]])
 
-		if max_weight_count > 0:
+		if max_average != -1:
 			return pd.Series([max_average, max_lineage])
 		else:
 			return pd.Series(['NaN', 'NaN'])
