@@ -23,13 +23,13 @@ All these dependences can be installed using Anaconda
 ### Easy way to configuration environment
 For MacOS users,
 ```
-git clone https://github.com/DrKaiyangZheng/VITAP.git
+git clone https://github.com/DrKaiyangZheng/VITAP1.1.git
 cd VITAP
 conda env create -f VITAP_conda_environment_OSX.yaml -n VITAP
 ```
 For Linux users,
 ```
-git clone https://github.com/DrKaiyangZheng/VITAP.git
+git clone https://github.com/DrKaiyangZheng/VITAP1.1.git
 cd VITAP
 conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
 ```
