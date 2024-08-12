@@ -46,5 +46,5 @@ setup(
         "License :: OSI Approved :: GPL3 License",
         "Programming Language :: Python :: 3",
     ],
-    scripts=['script/VITAP']
+    scripts=['scripts/VITAP']
 )
