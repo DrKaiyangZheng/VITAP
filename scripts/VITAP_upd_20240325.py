@@ -237,14 +237,13 @@ def delete_temp_files(path):
 	for temp_file in temp_files:
 		temp_file.unlink()
 
-
 #=======================================================================
 args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, update program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: python VITAP_upd.py --vmr raw_VMR.csv -o VMR_reformat.csv\n*******************************************************************\n')
 args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
 args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
 args_parser = args_parser.parse_args()         
 
-# ===== 加载最初VMR表格 =====
+# ===== Loading initial VMR table =====
 input_file = args_parser.vmr
 output_file = args_parser.out
 output_folder = "VMR_Genome"
@@ -258,7 +257,7 @@ for root, dirs, files in os.walk(output_folder):
 		if os.path.getsize(file_path) == 0:
 			os.remove(file_path)
 
-# ===== 整理VMR表格 =====
+# ===== Reformatting VMR table =====
 with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", encoding="utf-8", newline='') as outfile:
 	reader = csv.reader(infile)
 	writer = csv.writer(outfile)
@@ -288,28 +287,23 @@ while True:
 		print("[INFO] Exiting the program.")
 		exit()
 
-# ===== 下载基因组FASTA =====
+# ===== Downloading genome FASTA =====
 VMR_csv_file = output_file
 
-# 创建锁对象以保护计数器
 counter_lock = Lock()
 
-# 初始化计数器
 completed_downloads = 0
 
-# 获取已下载的ID集合
 downloaded_ids = {file[:-6] for file in os.listdir(output_folder) if file.endswith('.fasta')}      
 
-# 下载基因组数据
 with open(VMR_csv_file, "r", encoding="utf-8") as f:
 	reader = csv.reader(f)
 
-	# 跳过表头
 	next(reader)
 	rows = list(reader)
 	total_rows = len(rows)
 
-	# 使用3个线程并行下载
+	# efetch allows parallel downloads using up to 3 threads
 	with ThreadPoolExecutor(max_workers=3) as executor:
 		progress_bar = tqdm(total=total_rows, desc="Downloading genomes")
 		futures = [executor.submit(download_and_process_genome, row) for row in rows]
@@ -317,7 +311,7 @@ with open(VMR_csv_file, "r", encoding="utf-8") as f:
 			future.result()
 		progress_bar.close()
 
-# 处理需要截取序列的文件
+# Processing integrated viral sequences
 for row in rows:
 	virus_id = row[0]
 	start_end_sites = row[-1]
@@ -332,25 +326,20 @@ for row in rows:
 	output_fasta = os.path.join(output_folder, f"{virus_id}_segment.fasta")
 
 	if start is not None and end is not None:
-		# 截取指定片段并保存到新文件
 		os.system(f"seqkit subseq --quiet --id-regexp '^(\\S+)\.\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
-		# 删除原始的 "ID.fasta" 文件
 		fai_path = os.path.join(output_folder, '*.fai')
 		os.remove(input_fasta)
 		for fai in glob.glob(fai_path):
 			os.remove(fai)
 
-		# 重命名 "ID_segment.fasta" 为 "ID.fasta"
-#		os.rename(output_file, input_file)
-
 print("[INFO] All files successfully downloaded and processed")
 
-# ===== 获取当前日期并生成新文件夹名称 =====
+# ===== Get current date and generate new folder name =====
 today = datetime.today().strftime('%Y%m%d')
 updated_DB_folder = f"DB_{today}"
 os.makedirs(updated_DB_folder, exist_ok=True)
 
-# ===== 合并序列到DB_(date)文件夹 =====
+# ===== Merge sequences into DB_(date) folder =====
 db_genome_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.fasta")
 if not Path(db_genome_file).is_file():
 	print(f"[INFO] Merging file to VMR_genome_{today}.fasta...")
@@ -362,7 +351,7 @@ if not Path(db_genome_file).is_file():
 else:
 	print(f"[INFO] The VMR_genome_{today}.fasta exists, skipping.")
 	
-# ===== 统计序列长度 =====
+# ===== Statistical sequence length =====
 length_file = os.path.join(updated_DB_folder, f"VMR_genome_length_{today}.tsv")
 if not Path(length_file).is_file():
 	print(f"[INFO] Length statitic for VMR_genome_{today}.fasta")
@@ -371,35 +360,30 @@ if not Path(length_file).is_file():
 else:
 	print(f"[INFO] The VMR_genome_length_{today}.tsv exists, skipping.")			
 	
-# ===== prodigal开放阅读框预测 =====
+# ===== Prodigal =====
 db_prot_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.faa")
 db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.gff")
 if not Path(db_prot_file).is_file() or not Path(db_gff_file).is_file():
 	print(f"[INFO] ORF calling for VMR_genome_{today}.fasta")
 	with open("VITAP_VMR_update.log", "w") as log_file:
-		subprocess.run(["prodigal", "-p", "meta", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file], stdout=log_file, stderr=log_file)
+		subprocess.run(["/Volumes/Research/BioinformaticSoftware/prodigal-gv-master/parallel-prodigal-gv.py", "-t", "6", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file, "-t", "6"], stdout=log_file, stderr=log_file)
 else:
 	print(f"[INFO] VMR_genome_{today}.faa and VMR_genome_{today}.gff exist, skipping.")          
 	
 
-# ===== 短序列的提取和end-to-end阅读框翻译 =====
-# 提取短序列
+# ===== Short sequence extraction and end-to-end reading frame translation =====
 print("[INFO] Processing short sequences ignored by prodigal.")
 short_sequences = extract_short_sequences(db_genome_file, db_prot_file) 
+
 if short_sequences:    
-	# 保存短序列到文件
 	short_genome_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{today}.fasta")
 	SeqIO.write(short_sequences, short_genome_file, "fasta")
-	# 运行seqkit命令
 	short_faa_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{today}.faa")
 	subprocess.run(["seqkit", "translate", "-f", "6", "-F", "--clean", "-o", short_faa_file, short_genome_file])
-	# 将短序列预测结果追加到原始结果文件
 	with open(db_prot_file, "a") as final_output_file, open(short_faa_file, "r") as short_output_file:
 		final_output_file.write(short_output_file.read())
-	# 生成短序列的GFF文件
 	short_gff_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{today}.gff")
 	generate_short_gff(short_sequences, short_gff_file)
-	# 将短序列GFF文件追加到原始GFF文件
 	with open(db_gff_file, "a") as final_gff_file, open(short_gff_file, "r") as short_gff_output_file:
 		final_gff_file.write(short_gff_output_file.read())
 	os.remove(short_genome_file)
@@ -410,28 +394,27 @@ else:
 	print("[INFO] Genome and ORF files have consistent on non-redundant FASTA IDs. √")
 	del short_sequences      
 
-# ===== 清洗GFF文件 =====
-# 读取原始文件的内容
+# ===== Cleaning GFF =====
 print("[INFO] Cleaning the GFF file")
+
 with open(db_gff_file, "r") as infile:
 	lines = infile.readlines()
-# 移除以 '#' 开头的行
 filtered_lines = [line for line in lines if not line.startswith('#')]
-# 将过滤后的内容写回原始文件
+
 with open(db_gff_file, "w") as outfile:
 	outfile.writelines(filtered_lines)
 	
-# ===== 统计ORF总数 =====
+# ===== Statistical total number of ORFs =====
 print("[INFO] Statistic of the number of ORF per genome")
 db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.gff")
 orf_count_df = orf_count(db_gff_file)	
 
-# ===== 产生DB_VMR文件 =====
+# ===== Generate DB_VMR file =====
 db_VMR_path = os.path.join(updated_DB_folder, f"VMR_taxonomy_map_{today}.csv")
 print(f"[INFO] Moving {VMR_csv_file} to {updated_DB_folder} as {db_VMR_path}")
 shutil.copy(VMR_csv_file, db_VMR_path)
 
-# ===== self-BLAST同源序列比对 =====  
+# ===== self-Diamond  =====  
 blast_fp = os.path.join(updated_DB_folder, f"Self_BLAST_{today}.align")
 blast_db = os.path.join(updated_DB_folder, f"VMR_genome_{today}.dmnd")
 if not Path(blast_db).is_file():    
@@ -453,7 +436,7 @@ else:
 	else:
 		print(f"[INFO] {blast_fp} exists, self-aligning was finished, skipping.")      
 
-# ===== 为BLAST比对结果中的qseqid分配分类信息 =====
+# ===== Assigning classification information to qseqid in Diamond alignment results =====
 taxon_categories = ["Species", "Genus", "Family", "Order", "Class", "Phylum", "Kingdom", "Realm"]
 for taxa in taxon_categories:
 	taxon_threshold_output = os.path.join(updated_DB_folder, f'{taxa}_genome.threshold')	
