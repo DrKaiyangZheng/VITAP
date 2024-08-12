@@ -19,7 +19,7 @@ setup(
     keywords=['virus', 'metagenomics', 'metatranscriptomics', 'viral taxonomy'],
     # Not using find_packages for packages because we're a simple project
     packages=['vitap'],
-    python_requires >=3.9,
+    python_requires='>=3.9',
     # https://packaging.python.org/discussions/install-requires-vs-requirements/
     install_requires=[
         'numpy>=1.25',
