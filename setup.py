@@ -36,7 +36,7 @@ setup(
     ],
     package_data={
         'vitap': [
-            'vcontact3/templates/'
+            'vitap/templates/'
         ]
     },
     classifiers=[
