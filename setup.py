@@ -24,7 +24,7 @@ setup(
     install_requires=[
         'numpy >=1.25',
         'pandas >=1.5',
-        'entrez-direct >=16.2'
+        'entrez-direct >=16.2',
         'seqkit >=2.5',
         'prodigal >=2.6',
         'setuptools >=65.6',
