@@ -12,6 +12,7 @@ import numpy as np
 import pandas as pd
 import networkx as nx
 from sys import argv, exit
+import time
 from Bio import SeqIO
 from pathlib import Path
 from tqdm import tqdm
@@ -148,7 +149,7 @@ def taxonomy_assigning(blast_results_file, ictv_file, genome_cutoff_file, taxon_
 	grouped = grouped.merge(orf_count_df, left_on='qseqid_genome_id', right_index=True)
 
 	# calculate taxon_score
-	grouped = grouped.reset_index()  # 重置索引
+	grouped = grouped.reset_index()  # Reset Index
 	grouped[f'{taxon_level}_taxon_score'] = (grouped['sum_bitscore'] / grouped['count']) * ((grouped['orf_occurance_taxon_count'] / grouped['ORF_number']) ** 2) * grouped['perc_sseqid_taxa']
 	
 	# Extract the columns sseqid_taxa, taxon_score from the grouped data
@@ -175,29 +176,29 @@ def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_c
 		max_count = 0
 		max_lineage = None
 
-		# If the weight is greater than or equal to 0.3, calculate the average weight from the current point to the end and the corresponding joint taxonomic level
+		# If the weight is greater than or equal to 0.9, calculate the average weight from the current point to the end and the corresponding joint taxonomic level
 		for i, weight in enumerate(weights):
-			if row[weight] >= 0.3:
+			if row[weight] >= 0.9:
 				average = row[weights[i:]].mean()
 				lineage = ";".join(row[lineages[i:]])
 				return pd.Series([average, lineage])
 
-		# If all weights are less than 0.3, find the combination with the highest average weight
+		# If all weights are less than 0.9, find the combination with the highest average weight
 		total_max_average = -1
-		for i in range(len(weights), 0, -1):
-			current_weights = row[weights[-i:]]
+		for i in range(len(weights), 2, -1):  # Terminates when the number of remaining taxonomic level is 3
+			current_weights = row[weights[-i:]]  # Recursing step by step from Species
 			if not current_weights.isna().any():
 				current_average = current_weights.mean()
 				if current_average > total_max_average:
 					total_max_average = current_average
 
 		# Repeat the cycle to find combinations that meet the new criteria
-		for i in range(len(weights), 0, -1):
+		for i in range(len(weights), 2, -1):  # 修Terminates when the number of remaining taxonomic level is 3
 			current_weights = row[weights[-i:]]
 			if not current_weights.isna().any():
 				current_average = current_weights.mean()
 				current_count = i
-				if current_average >= 0.95 * total_max_average:
+				if current_average >= 0.95 * total_max_average and current_count >= 3:
 					if current_count > max_count:
 						max_average = current_average
 						max_count = current_count
@@ -210,11 +211,18 @@ def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_c
 
 	def pad_lineage(lineage):
 		elements = lineage.split(';')
-		return ';'.join(['-'] * (8 - len(elements)) + elements)    
-	
+		return ';'.join(['-'] * (8 - len(elements)) + elements)
+
 	def count_dashes(lineage):
-		return lineage.count('-')    
+		return lineage.count('-')
 		
+	def replace_first_two_elements(lineage):
+		elements = lineage.split(';')
+		if elements[0] != '-' or elements[1] != '-':
+			elements[0] = '-'
+			elements[1] = '-'
+		return ';'.join(elements)   
+
 	print('[INFO] Importing taxonomic bipartite graphs and ICTV taxonomic hierarchy')
 	species_annotation_file = os.path.join(result_dir, "Species_bipartite.graph")
 	species_df = pd.read_csv(species_annotation_file, sep='\t')
@@ -232,14 +240,17 @@ def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_c
 		unit_df = pd.read_csv(unit_annotation_file, sep='\t')
 		merged_df = merged_df.merge(unit_df[['Genome_ID', taxa, f'{taxa}_weight']], on=['Genome_ID', taxa], how='left', suffixes=('', f'_from_{taxa}'))
 		merged_df[f'{taxa}_weight'] = merged_df[f'{taxa}_weight_from_{taxa}']
-		merged_df.drop(columns=[f'{taxa}_weight_from_{taxa}'], inplace=True)        
+		merged_df.drop(columns=[f'{taxa}_weight_from_{taxa}'], inplace=True)
 
 	weights = ['Species_weight', 'Genus_weight', 'Family_weight', 'Order_weight', 'Class_weight', 'Phylum_weight', 'Kingdom_weight', 'Realm_weight']
 	lineages = ['Species', 'Genus', 'Family', 'Order', 'Class', 'Phylum', 'Kingdom', 'Realm']
 
 	print('[INFO] Calculating average taxonomic score for target genomes: \n  -> finding the lowest effective taxonomic level\n  -> determining the optimal taxonomic hierarchy termination point')
 	merged_df[['lineage_score', 'lineage']] = merged_df.apply(lambda row: process_row(row), axis=1)
-	
+
+	merged_df = merged_df[merged_df['lineage'].str.count(';') >= 3]
+
+	#merged_df.to_csv('merged_df.csv', header=True, index=False)
 	merged_df['lineage'] = merged_df['lineage'].apply(pad_lineage)
 	all_lineage_df = merged_df[['Genome_ID', 'lineage', 'lineage_score']].drop_duplicates()
 
@@ -261,16 +272,19 @@ def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_c
 	]
 	choices = ['High-confidence', 'Medium-confidence']
 	best_lineage_df['Confidence_level'] = np.select(conditions, choices, default='Low-confidence')
-
+	best_lineage_df.loc[best_lineage_df['Confidence_level'].isin(['Low-confidence', 'Medium-confidence']), 'lineage'] = best_lineage_df.loc[best_lineage_df['Confidence_level'].isin(['Low-confidence', 'Medium-confidence']), 'lineage'].apply(replace_first_two_elements)
+	#best_lineage_df.to_csv('best_lineage_df.csv', header=True, index=False)
+	
 	return best_lineage_df, all_lineage_df
 
-def assignment():		 
+def assignment():        
 	# ======================================================================
 	args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, main program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: ./VITAP.sh assignment -i target_genome.fasta -d ./DB_20230510/ -o VITAP_result\n*******************************************************************\n')
 	args_parser.add_argument('-i', '--fasta', required=True, help = 'Input genome sequence file in FASTA format.')
 	args_parser.add_argument('-d', '--db', required=True, help = 'VITAP database folder, which contains 10 required files: VMR genome mapping csv file, VMR protein DIAMOND database, eight taxon-level thresholds files (Species/Genus/Family/Order/Class/Phylum/Kingdom/Realm). ')
 	args_parser.add_argument('-p', '--cpu', required=False, default = 1, help='Number of threads available for DIAMOND')
 	args_parser.add_argument('-o', '--out', required=True, help = 'Result folder name')
+	args_parser.add_argument("--low_conf", action = 'store_true', help="Exporting taxonomic assignments with low confidence, which will be discarded by default [lineage score < 0.1].")  
 	args_parser = args_parser.parse_args()         
 	# ======================================================================
 	input_fasta = args_parser.fasta
@@ -280,6 +294,8 @@ def assignment():
 	log_file = os.path.join(result_folder, "VITAP_run.log")
 	os.makedirs(result_folder, exist_ok=True)
 	taxon_categories = ["Species", "Genus", "Family", "Order", "Class", "Phylum", "Kingdom", "Realm"]
+	start_time_wall_clock = time.time()
+	start_time_cpu = time.process_time()
 
 	print("===== The VITAP (VIral Taxonomy Assigning Pipeline, main program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China ===== ")
 	print("[INFO] A number of temporary files will be generated in your result directory, please keep them or delete them followed by the guidlines.")
@@ -307,7 +323,7 @@ def assignment():
 				with open(input_fasta, 'r') as ifile, open(select_genome, 'r') as sg:
 					merged_file.write(ifile.read())
 					merged_file.write(sg.read())
-			subprocess.run(["prodigal", "-p", "meta", "-i", merge_fasta, "-a", input_faa, "-f", "gff", "-o", merge_gff], stdout=log_file, stderr=log_file)
+			subprocess.run(["/Volumes/Research/BioinformaticSoftware/prodigal-gv-master/parallel-prodigal-gv.py", "-t", "8", "-i", merge_fasta, "-a", input_faa, "-f", "gff", "-o", merge_gff], stdout=log_file, stderr=log_file)
 	else:
 		print(f"[INFO] Using exited file : {input_faa}")           
 	# extract short sequence
@@ -387,15 +403,27 @@ def assignment():
 	print("===== Determining viral lineages based on multi-partite graph ===== ")
 	best_lineage_df, all_lineage_df = multipartite_taxonomic_graph_generator(result_folder, VMR_csv_file, taxon_categories)
 
+	if not args_parser.low_conf:
+		best_lineage_df.loc[best_lineage_df['Confidence_level'] == 'Low-confidence', 'lineage'] = '-;-;-;-;-;-;-;-'
+
 	print("===== Exporting results ===== ")
 	best_lineage_df_outfile = os.path.join(result_folder, f"best_determined_lineages.tsv")
 	all_lineage_df_outfile = os.path.join(result_folder, f"all_lineages.tsv")
 
 	best_lineage_df.to_csv(best_lineage_df_outfile, sep = '\t', index = False)
 	all_lineage_df.to_csv(all_lineage_df_outfile, sep = '\t', index = False)
-
+	
+	end_time_wall_clock = time.time()
+	end_time_cpu = time.process_time()
+	elapsed_time_seconds_wall_clock = end_time_wall_clock - start_time_wall_clock
+	elapsed_time_seconds_cpu = end_time_cpu - start_time_cpu
+	elapsed_time_hours_wall_clock = elapsed_time_seconds_wall_clock / 3600
+	elapsed_time_hours_cpu = elapsed_time_seconds_cpu / 3600
+	print(f"[INFO] Time-consuming (wall clock): {elapsed_time_hours_wall_clock:.1f} hours")
+	print(f"[INFO] Time-consuming (CPU): {elapsed_time_hours_cpu:.1f} hours")
+	
 	print('===== All done ===== ')
 	
 if __name__ == "__main__":
-	assignment()	
+	assignment()    
 
