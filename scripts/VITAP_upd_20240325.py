@@ -366,7 +366,7 @@ db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.gff")
 if not Path(db_prot_file).is_file() or not Path(db_gff_file).is_file():
 	print(f"[INFO] ORF calling for VMR_genome_{today}.fasta")
 	with open("VITAP_VMR_update.log", "w") as log_file:
-		subprocess.run(["/Volumes/Research/BioinformaticSoftware/prodigal-gv-master/parallel-prodigal-gv.py", "-t", "6", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file, "-t", "6"], stdout=log_file, stderr=log_file)
+		subprocess.run(["prodigal", "-p", "meta", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file, "-t", "6"], stdout=log_file, stderr=log_file)
 else:
 	print(f"[INFO] VMR_genome_{today}.faa and VMR_genome_{today}.gff exist, skipping.")          
 	
