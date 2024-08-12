@@ -17,8 +17,6 @@ setup(
     author='Kaiyang Zheng',
     author_email='zhengkaiyang@stu.ouc.edu.cn',
     keywords=['virus', 'metagenomics', 'metatranscriptomics', 'viral taxonomy'],
-    # Not using find_packages for packages because we're a simple project
-    packages=['vitap'],
     python_requires='>=3.9',
     # https://packaging.python.org/discussions/install-requires-vs-requirements/
     install_requires=[
@@ -34,11 +32,6 @@ setup(
         'biopython >=1.78',
         'diamond >=0.9',
     ],
-    package_data={
-        'vitap': [
-            'vitap/templates/'
-        ]
-    },
     classifiers=[
         "Intended Audience :: Science/Research",
         "Natural Language :: English",
