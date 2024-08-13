@@ -4,12 +4,12 @@ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
 if [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]]; then
   echo "*******************************************************************"
-  echo "The VITAP (VIral Taxonomy Assigning Pipeline) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China"
+  echo "The VITAP (Viral Taxonomic Assignment Pipeline) Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China"
   echo "*******************************************************************"
   echo "Usage: $0 <command> [options]"
   echo "Commands:"
   echo "  assignment    VITAP taxonomic assignment pipeline."
-  echo "  upd           Update program of VITAP. The VITAP will update database based on ICTV VMR."
+  echo "  upd           Update program of VITAP. The VITAP will update database based on ICTV VMR or other formated source."
   echo ""
   echo "For command-specific help, run: $0 <command> -h"
   exit 0
