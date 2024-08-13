@@ -240,12 +240,14 @@ def delete_temp_files(path):
 args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, update program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: python VITAP_upd.py --vmr raw_VMR.csv -o VMR_reformat.csv\n*******************************************************************\n')
 args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
 args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
+args_parser.add_argument('-d', '--db', required=True, help = 'Defiend DB name')
 args_parser = args_parser.parse_args()         
 
 # ===== Loading initial VMR table =====
 input_file = args_parser.vmr
 output_file = args_parser.out
 output_folder = "VMR_Genome"
+db_name = args_parser.db
 os.makedirs(output_folder, exist_ok=True)
 VMR_csv_file = output_file
 
@@ -336,13 +338,14 @@ print("[INFO] All files successfully downloaded and processed")
 
 # ===== Get current date and generate new folder name =====
 today = datetime.today().strftime('%Y%m%d')
-updated_DB_folder = f"DB_{today}"
+#updated_DB_folder = f"DB_{today}"
+updated_DB_folder = f"DB_{db_name}"
 os.makedirs(updated_DB_folder, exist_ok=True)
 
 # ===== Merge sequences into DB_(date) folder =====
-db_genome_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.fasta")
+db_genome_file = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.fasta")
 if not Path(db_genome_file).is_file():
-	print(f"[INFO] Merging file to VMR_genome_{today}.fasta...")
+	print(f"[INFO] Merging file to VMR_genome_{db_name}.fasta...")
 	with open(db_genome_file, "w") as db_genome:
 		for fasta_file in glob.glob(os.path.join(output_folder, "*.fasta")):
 			with open(fasta_file, "r") as single_fasta:
@@ -352,23 +355,23 @@ else:
 	print(f"[INFO] The VMR_genome_{today}.fasta exists, skipping.")
 	
 # ===== Statistical sequence length =====
-length_file = os.path.join(updated_DB_folder, f"VMR_genome_length_{today}.tsv")
+length_file = os.path.join(updated_DB_folder, f"VMR_genome_length_{db_name}.tsv")
 if not Path(length_file).is_file():
-	print(f"[INFO] Length statitic for VMR_genome_{today}.fasta")
+	print(f"[INFO] Length statitic for VMR_genome_{db_name}.fasta")
 	with open("VITAP_VMR_update.log", "w") as log_file:
 		subprocess.run(["seqkit", "fx2tab", "-l", "-n", "-i", "-H", "-o", length_file, db_genome_file])
 else:
 	print(f"[INFO] The VMR_genome_length_{today}.tsv exists, skipping.")			
 	
 # ===== Prodigal =====
-db_prot_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.faa")
-db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.gff")
+db_prot_file = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.faa")
+db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.gff")
 if not Path(db_prot_file).is_file() or not Path(db_gff_file).is_file():
-	print(f"[INFO] ORF calling for VMR_genome_{today}.fasta")
+	print(f"[INFO] ORF calling for VMR_genome_{db_name}.fasta")
 	with open("VITAP_VMR_update.log", "w") as log_file:
 		subprocess.run(["prodigal-gv", "-p", "meta", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file], stdout=log_file, stderr=log_file)
 else:
-	print(f"[INFO] VMR_genome_{today}.faa and VMR_genome_{today}.gff exist, skipping.")          
+	print(f"[INFO] VMR_genome_{db_name}.faa and VMR_genome_{db_name}.gff exist, skipping.")          
 	
 
 # ===== Short sequence extraction and end-to-end reading frame translation =====
@@ -376,13 +379,13 @@ print("[INFO] Processing short sequences ignored by prodigal.")
 short_sequences = extract_short_sequences(db_genome_file, db_prot_file) 
 
 if short_sequences:    
-	short_genome_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{today}.fasta")
+	short_genome_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{db_name}.fasta")
 	SeqIO.write(short_sequences, short_genome_file, "fasta")
-	short_faa_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{today}.faa")
+	short_faa_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{db_name}.faa")
 	subprocess.run(["seqkit", "translate", "-f", "6", "-F", "--clean", "-o", short_faa_file, short_genome_file])
 	with open(db_prot_file, "a") as final_output_file, open(short_faa_file, "r") as short_output_file:
 		final_output_file.write(short_output_file.read())
-	short_gff_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{today}.gff")
+	short_gff_file = os.path.join(updated_DB_folder, f"VMR_short_genome_{db_name}.gff")
 	generate_short_gff(short_sequences, short_gff_file)
 	with open(db_gff_file, "a") as final_gff_file, open(short_gff_file, "r") as short_gff_output_file:
 		final_gff_file.write(short_gff_output_file.read())
@@ -406,17 +409,17 @@ with open(db_gff_file, "w") as outfile:
 	
 # ===== Statistical total number of ORFs =====
 print("[INFO] Statistic of the number of ORF per genome")
-db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.gff")
+db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.gff")
 orf_count_df = orf_count(db_gff_file)	
 
 # ===== Generate DB_VMR file =====
-db_VMR_path = os.path.join(updated_DB_folder, f"VMR_taxonomy_map_{today}.csv")
+db_VMR_path = os.path.join(updated_DB_folder, f"VMR_taxonomy_map_{db_name}.csv")
 print(f"[INFO] Moving {VMR_csv_file} to {updated_DB_folder} as {db_VMR_path}")
 shutil.copy(VMR_csv_file, db_VMR_path)
 
 # ===== self-Diamond  =====  
-blast_fp = os.path.join(updated_DB_folder, f"Self_BLAST_{today}.align")
-blast_db = os.path.join(updated_DB_folder, f"VMR_genome_{today}.dmnd")
+blast_fp = os.path.join(updated_DB_folder, f"Self_BLAST_{db_name}.align")
+blast_db = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.dmnd")
 if not Path(blast_db).is_file():    
 	print("[INFO] Building ICTV reference protein databse.")
 	subprocess.run(["diamond", "makedb", "--in", db_prot_file, "-d", blast_db])
