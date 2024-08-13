@@ -279,9 +279,9 @@ def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_c
 
 def assignment():        
 	# ======================================================================
-	args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, main program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: ./VITAP.sh assignment -i target_genome.fasta -d ./DB_20230510/ -o VITAP_result\n*******************************************************************\n')
+	args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomic Assignment Pipeline, main program) Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: ./VITAP.sh assignment -i target_genome.fasta -d ./DB_20230510/ -o VITAP_result\n*******************************************************************\n')
 	args_parser.add_argument('-i', '--fasta', required=True, help = 'Input genome sequence file in FASTA format.')
-	args_parser.add_argument('-d', '--db', required=True, help = 'VITAP database folder, which contains 10 required files: VMR genome mapping csv file, VMR protein DIAMOND database, eight taxon-level thresholds files (Species/Genus/Family/Order/Class/Phylum/Kingdom/Realm). ')
+	args_parser.add_argument('-d', '--db', required=True, help = 'VITAP database folder, which contains 10 required files: VMR genome mapping csv file, VMR protein DIAMOND database, eight lineage weight files (Species/Genus/Family/Order/Class/Phylum/Kingdom/Realm). ')
 	args_parser.add_argument('-p', '--cpu', required=False, default = 1, help='Number of threads available for DIAMOND')
 	args_parser.add_argument('-o', '--out', required=True, help = 'Result folder name')
 	args_parser.add_argument("--low_conf", action = 'store_true', help="Exporting taxonomic assignments with low confidence, which will be discarded by default [lineage score < 0.1].")  
@@ -297,7 +297,7 @@ def assignment():
 	start_time_wall_clock = time.time()
 	start_time_cpu = time.process_time()
 
-	print("===== The VITAP (VIral Taxonomy Assigning Pipeline, main program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China ===== ")
+	print("===== The VITAP (VIral Taxonomy Assigning Pipeline, main program) Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China ===== ")
 	print("[INFO] A number of temporary files will be generated in your result directory, please keep them or delete them followed by the guidlines.")
 
 	# ===== check duplicate ID =====
