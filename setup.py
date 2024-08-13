@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from pathlib import Path
 
 curr_dir = Path(__file__).parent
@@ -40,5 +40,8 @@ setup(
         "License :: OSI Approved :: GPL3 License",
         "Programming Language :: Python :: 3",
     ],
-    scripts=['scripts/VITAP']
+    scripts=['scripts/VITAP',
+             'scripts/VITAP_assignment_20240731.py',
+             'scripts/VITAP_upd_20240325.py'
+    ]
 )
