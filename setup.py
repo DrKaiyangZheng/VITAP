@@ -10,6 +10,7 @@ setup(
     name='VITAP',
     version='1.3',
     packages=find_packages(exclude=['images']),
+    include_package_data=True,
     description='Viral Taxonomic Assignment Pipeline',
     long_description=long_description,
     long_description_content_type='text/markdown',
