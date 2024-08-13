@@ -237,7 +237,7 @@ def delete_temp_files(path):
 		temp_file.unlink()
 
 #=======================================================================
-args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (Viral Taxonomic Assignment Pipeline, update program) v.1.3, Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: VITAP upd --vmr raw_VMR.csv -o VMR_reformat.csv -d MSL38\n*******************************************************************\n')
+args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (Viral Taxonomic Assignment Pipeline, update program) v.1.5, Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: VITAP upd --vmr raw_VMR.csv -o VMR_reformat.csv -d MSL38\n*******************************************************************\n')
 args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
 args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
 args_parser.add_argument('-d', '--db', required=True, help = 'You need to assign a name for a new DB')
