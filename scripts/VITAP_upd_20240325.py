@@ -8,7 +8,6 @@ import shutil
 import subprocess
 import statistics
 import random
-import numpy as np
 import pandas as pd
 from sys import argv, exit
 from Bio import SeqIO
