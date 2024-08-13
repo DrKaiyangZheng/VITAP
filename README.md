@@ -20,7 +20,7 @@ The VITAP is compiled with Python3 and tested on Mac OSX and Linux CentOS, and c
 ####   · tqdm  4.65.0
 ####   · wget  1.21.4
 All these dependences can be installed using Anaconda
-### Easy way to configuration environment
+### Installation from source code
 For MacOS users,
 ```
 git clone https://github.com/DrKaiyangZheng/VITAP.git
@@ -32,6 +32,10 @@ For Linux users,
 git clone https://github.com/DrKaiyangZheng/VITAP.git
 cd VITAP
 conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
+```
+### Installation through conda
+```
+conda install bioconda::vitap
 ```
 ### Use the pre-built database
 You may wish to directly download the database rather prepare by your own before using VITAP. The pre-built database can be retrived from [Figshare repository](https://doi.org/10.6084/m9.figshare.25426159.v1). The database is compressed in *.zip* format, with the compressed package being approximately 1 GB and about 4.5 GB after decompression. The hash value (MD5) is `2dd77e083b1d35569201cf90adb7373f`. You need to place all the folders generated from decompressing the database into the VITAP directory. There should be 3 folders; ignore the MacOSX folder, as I compressed it on my own Mac.
