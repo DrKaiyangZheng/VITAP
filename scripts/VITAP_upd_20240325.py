@@ -326,7 +326,8 @@ for row in rows:
 	output_fasta = os.path.join(output_folder, f"{virus_id}_segment.fasta")
 
 	if start is not None and end is not None:
-		os.system(f"seqkit subseq --quiet --id-regexp '^(\\S+)\.\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
+		#os.system(f"seqkit subseq --quiet --id-regexp '^(\\S+)\.\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
+		os.system(f"seqkit subseq --quiet --id-regexp '^(\\\\S+)\\.\\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
 		fai_path = os.path.join(output_folder, '*.fai')
 		os.remove(input_fasta)
 		for fai in glob.glob(fai_path):
@@ -366,7 +367,7 @@ db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{today}.gff")
 if not Path(db_prot_file).is_file() or not Path(db_gff_file).is_file():
 	print(f"[INFO] ORF calling for VMR_genome_{today}.fasta")
 	with open("VITAP_VMR_update.log", "w") as log_file:
-		subprocess.run(["prodigal", "-p", "meta", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file, "-t", "6"], stdout=log_file, stderr=log_file)
+		subprocess.run(["prodigal", "-p", "meta", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file], stdout=log_file, stderr=log_file)
 else:
 	print(f"[INFO] VMR_genome_{today}.faa and VMR_genome_{today}.gff exist, skipping.")          
 	
