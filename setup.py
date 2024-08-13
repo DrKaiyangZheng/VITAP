@@ -8,7 +8,7 @@ long_description = (curr_dir / "README.md").read_text()
 # https://github.com/pypa/sampleproject/blob/master/setup.py
 setup(
     name='VITAP',
-    version='1.3',
+    version='1.4',
     packages=find_packages(exclude=['images']),
     include_package_data=True,
     description='Viral Taxonomic Assignment Pipeline',
@@ -26,7 +26,7 @@ setup(
         'pandas >=1.5',
         'entrez-direct >=16.2',
         'seqkit >=2.5',
-        'prodigal >=2.6',
+        'prodigal-gv >=2.6',
         'setuptools >=65.6',
         'scipy >=1.10.1',
         'networkx >=3.1',
