@@ -41,7 +41,7 @@ dependencies:
   - pip=23.2
   - platformdirs=4.1.0=pyhd8ed1ab_0
   - pooch=1.8
-  - prodigal=2.6
+  - prodigal-gv=2.6
   - pysocks=1.7
   - python=3.10
   - python-dateutil=2.8.
