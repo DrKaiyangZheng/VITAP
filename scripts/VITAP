@@ -4,7 +4,7 @@ SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 
 if [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]]; then
   echo "*******************************************************************"
-  echo "The VITAP (Viral Taxonomic Assignment Pipeline) Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China"
+  echo "The VITAP (Viral Taxonomic Assignment Pipeline) v.1.3, Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China"
   echo "*******************************************************************"
   echo "Usage: $0 <command> [options]"
   echo "Commands:"
