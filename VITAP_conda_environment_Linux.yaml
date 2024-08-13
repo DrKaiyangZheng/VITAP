@@ -45,7 +45,7 @@ dependencies:
   - openssl=3.2
   - pandas=2.1
   - pip=23.3
-  - prodigal=2.6
+  - prodigal-gv=2.6
   - python=3.12
   - python-dateutil=2.8
   - python-tzdata=2023.3
