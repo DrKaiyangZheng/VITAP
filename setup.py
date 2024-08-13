@@ -8,8 +8,8 @@ long_description = (curr_dir / "README.md").read_text()
 # https://github.com/pypa/sampleproject/blob/master/setup.py
 setup(
     name='VITAP',
-    version='1.1',
-    packages=find_packages(exclude=['images', 'test_result']),
+    version='1.3',
+    packages=find_packages(exclude=['images']),
     description='Viral Taxonomic Assignment Pipeline',
     long_description=long_description,
     long_description_content_type='text/markdown',
