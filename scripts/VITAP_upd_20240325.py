@@ -237,10 +237,10 @@ def delete_temp_files(path):
 		temp_file.unlink()
 
 #=======================================================================
-args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (VIral Taxonomy Assigning Pipeline, update program) Copyright 2023 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: python VITAP_upd.py --vmr raw_VMR.csv -o VMR_reformat.csv\n*******************************************************************\n')
+args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (Viral Taxonomic Assignment Pipeline, update program) Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: VITAP upd --vmr raw_VMR.csv -o VMR_reformat.csv -d MSL38\n*******************************************************************\n')
 args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
 args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
-args_parser.add_argument('-d', '--db', required=True, help = 'Defiend DB name')
+args_parser.add_argument('-d', '--db', required=True, help = 'You need to assign a name for a new DB')
 args_parser = args_parser.parse_args()         
 
 # ===== Loading initial VMR table =====
@@ -352,7 +352,7 @@ if not Path(db_genome_file).is_file():
 				db_genome.write(single_fasta.read())
 		remove_invalid_lines(db_genome_file)        
 else:
-	print(f"[INFO] The VMR_genome_{today}.fasta exists, skipping.")
+	print(f"[INFO] The VMR_genome_{db_name}.fasta exists, skipping.")
 	
 # ===== Statistical sequence length =====
 length_file = os.path.join(updated_DB_folder, f"VMR_genome_length_{db_name}.tsv")
@@ -361,7 +361,7 @@ if not Path(length_file).is_file():
 	with open("VITAP_VMR_update.log", "w") as log_file:
 		subprocess.run(["seqkit", "fx2tab", "-l", "-n", "-i", "-H", "-o", length_file, db_genome_file])
 else:
-	print(f"[INFO] The VMR_genome_length_{today}.tsv exists, skipping.")			
+	print(f"[INFO] The VMR_genome_length_{db_name}.tsv exists, skipping.")			
 	
 # ===== Prodigal =====
 db_prot_file = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.faa")
