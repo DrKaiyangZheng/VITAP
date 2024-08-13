@@ -9,6 +9,7 @@ long_description = (curr_dir / "README.md").read_text()
 setup(
     name='VITAP',
     version='1.1',
+    packages=find_packages(exclude=['images', 'test_result']),
     description='Viral Taxonomic Assignment Pipeline',
     long_description=long_description,
     long_description_content_type='text/markdown',
