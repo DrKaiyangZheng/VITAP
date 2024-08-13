@@ -323,7 +323,7 @@ def assignment():
 				with open(input_fasta, 'r') as ifile, open(select_genome, 'r') as sg:
 					merged_file.write(ifile.read())
 					merged_file.write(sg.read())
-			subprocess.run(["prodigal", "-p", "meta", "-i", merge_fasta, "-a", input_faa, "-f", "gff", "-o", merge_gff], stdout=log_file, stderr=log_file)
+			subprocess.run(["prodigal-gv", "-p", "meta", "-i", merge_fasta, "-a", input_faa, "-f", "gff", "-o", merge_gff], stdout=log_file, stderr=log_file)
 	else:
 		print(f"[INFO] Using exited file : {input_faa}")           
 	# extract short sequence
