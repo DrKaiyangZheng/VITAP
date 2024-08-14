@@ -1,0 +1,613 @@
+[INFO][0m sample by number
+[INFO][0m loading all sequences into memory...
+[INFO][0m 5 sequences outputted
+-------------------------------------
+PRODIGAL v2.11.0-gv [March, 2023]         
+Univ of Tenn / Oak Ridge National Lab
+Doug Hyatt, Loren Hauser, et al.     
+-------------------------------------
+Request:  Metagenomic, Phase:  Training
+Initializing training files...done!
+-------------------------------------
+Request:  Metagenomic, Phase:  Gene Finding
+Finding genes in sequence #1 (8280 bp)...done!
+Finding genes in sequence #2 (7250 bp)...done!
+Finding genes in sequence #3 (154641 bp)...done!
+Finding genes in sequence #4 (80551 bp)...done!
+Finding genes in sequence #5 (4058 bp)...done!
+Finding genes in sequence #6 (7494 bp)...done!
+Finding genes in sequence #7 (8098 bp)...done!
+Finding genes in sequence #8 (158706 bp)...done!
+Finding genes in sequence #9 (38368 bp)...done!
+Finding genes in sequence #10 (93787 bp)...done!
+Finding genes in sequence #11 (1259197 bp)...done!
+Finding genes in sequence #12 (6407 bp)...done!
+Finding genes in sequence #13 (285 bp)...done!
+Finding genes in sequence #14 (5215 bp)...done!
+Finding genes in sequence #15 (4017 bp)...done!
+Finding genes in sequence #16 (126550 bp)...done!
+Finding genes in sequence #17 (4073 bp)...done!
+Finding genes in sequence #18 (3993 bp)...done!
+Finding genes in sequence #19 (6842 bp)...done!
+Finding genes in sequence #20 (4230 bp)...done!
+Finding genes in sequence #21 (74519 bp)...done!
+Finding genes in sequence #22 (6051 bp)...done!
+Finding genes in sequence #23 (8122 bp)...done!
+Finding genes in sequence #24 (4096 bp)...done!
+Finding genes in sequence #25 (7474 bp)...done!
+Finding genes in sequence #26 (6891 bp)...done!
+Finding genes in sequence #27 (5486 bp)...done!
+Finding genes in sequence #28 (186713 bp)...done!
+Finding genes in sequence #29 (4133 bp)...done!
+Finding genes in sequence #30 (4529 bp)...done!
+Finding genes in sequence #31 (158143 bp)...done!
+Finding genes in sequence #32 (1000 bp)...done!
+Finding genes in sequence #33 (1000 bp)...done!
+Finding genes in sequence #34 (1000 bp)...done!
+Finding genes in sequence #35 (1000 bp)...done!
+Finding genes in sequence #36 (1000 bp)...done!
+Finding genes in sequence #37 (1000 bp)...done!
+Finding genes in sequence #38 (1000 bp)...done!
+Finding genes in sequence #39 (1000 bp)...done!
+Finding genes in sequence #40 (1000 bp)...done!
+Finding genes in sequence #41 (1000 bp)...done!
+Finding genes in sequence #42 (1000 bp)...done!
+Finding genes in sequence #43 (1000 bp)...done!
+Finding genes in sequence #44 (1000 bp)...done!
+Finding genes in sequence #45 (1000 bp)...done!
+Finding genes in sequence #46 (1000 bp)...done!
+Finding genes in sequence #47 (1000 bp)...done!
+Finding genes in sequence #48 (1000 bp)...done!
+Finding genes in sequence #49 (1000 bp)...done!
+Finding genes in sequence #50 (1000 bp)...done!
+Finding genes in sequence #51 (1000 bp)...done!
+Finding genes in sequence #52 (1000 bp)...done!
+Finding genes in sequence #53 (1000 bp)...done!
+Finding genes in sequence #54 (1000 bp)...done!
+Finding genes in sequence #55 (1000 bp)...done!
+Finding genes in sequence #56 (1000 bp)...done!
+Finding genes in sequence #57 (1000 bp)...done!
+Finding genes in sequence #58 (1000 bp)...done!
+Finding genes in sequence #59 (1000 bp)...done!
+Finding genes in sequence #60 (1000 bp)...done!
+Finding genes in sequence #61 (1000 bp)...done!
+Finding genes in sequence #62 (1000 bp)...done!
+Finding genes in sequence #63 (1000 bp)...done!
+Finding genes in sequence #64 (1000 bp)...done!
+Finding genes in sequence #65 (1000 bp)...done!
+Finding genes in sequence #66 (1000 bp)...done!
+Finding genes in sequence #67 (1000 bp)...done!
+Finding genes in sequence #68 (1000 bp)...done!
+Finding genes in sequence #69 (1000 bp)...done!
+Finding genes in sequence #70 (1000 bp)...done!
+Finding genes in sequence #71 (1000 bp)...done!
+Finding genes in sequence #72 (1000 bp)...done!
+Finding genes in sequence #73 (1000 bp)...done!
+Finding genes in sequence #74 (1000 bp)...done!
+Finding genes in sequence #75 (1000 bp)...done!
+Finding genes in sequence #76 (1000 bp)...done!
+Finding genes in sequence #77 (1000 bp)...done!
+Finding genes in sequence #78 (1000 bp)...done!
+Finding genes in sequence #79 (1000 bp)...done!
+Finding genes in sequence #80 (1000 bp)...done!
+Finding genes in sequence #81 (1000 bp)...done!
+Finding genes in sequence #82 (1000 bp)...done!
+Finding genes in sequence #83 (1000 bp)...done!
+Finding genes in sequence #84 (1000 bp)...done!
+Finding genes in sequence #85 (1000 bp)...done!
+Finding genes in sequence #86 (1000 bp)...done!
+Finding genes in sequence #87 (1000 bp)...done!
+Finding genes in sequence #88 (1000 bp)...done!
+Finding genes in sequence #89 (1000 bp)...done!
+Finding genes in sequence #90 (1000 bp)...done!
+Finding genes in sequence #91 (1000 bp)...done!
+Finding genes in sequence #92 (1000 bp)...done!
+Finding genes in sequence #93 (1000 bp)...done!
+Finding genes in sequence #94 (1000 bp)...done!
+Finding genes in sequence #95 (1000 bp)...done!
+Finding genes in sequence #96 (1000 bp)...done!
+Finding genes in sequence #97 (1000 bp)...done!
+Finding genes in sequence #98 (1000 bp)...done!
+Finding genes in sequence #99 (1000 bp)...done!
+Finding genes in sequence #100 (1000 bp)...done!
+Finding genes in sequence #101 (1000 bp)...done!
+Finding genes in sequence #102 (1000 bp)...done!
+Finding genes in sequence #103 (1000 bp)...done!
+Finding genes in sequence #104 (1000 bp)...done!
+Finding genes in sequence #105 (1000 bp)...done!
+Finding genes in sequence #106 (1000 bp)...done!
+Finding genes in sequence #107 (1000 bp)...done!
+Finding genes in sequence #108 (1000 bp)...done!
+Finding genes in sequence #109 (1000 bp)...done!
+Finding genes in sequence #110 (1000 bp)...done!
+Finding genes in sequence #111 (1000 bp)...done!
+Finding genes in sequence #112 (1000 bp)...done!
+Finding genes in sequence #113 (1000 bp)...done!
+Finding genes in sequence #114 (1000 bp)...done!
+Finding genes in sequence #115 (1000 bp)...done!
+Finding genes in sequence #116 (1000 bp)...done!
+Finding genes in sequence #117 (1000 bp)...done!
+Finding genes in sequence #118 (1000 bp)...done!
+Finding genes in sequence #119 (1000 bp)...done!
+Finding genes in sequence #120 (1000 bp)...done!
+Finding genes in sequence #121 (1000 bp)...done!
+Finding genes in sequence #122 (1000 bp)...done!
+Finding genes in sequence #123 (1000 bp)...done!
+Finding genes in sequence #124 (1000 bp)...done!
+Finding genes in sequence #125 (1000 bp)...done!
+Finding genes in sequence #126 (1000 bp)...done!
+Finding genes in sequence #127 (1000 bp)...done!
+Finding genes in sequence #128 (1000 bp)...done!
+Finding genes in sequence #129 (1000 bp)...done!
+Finding genes in sequence #130 (1000 bp)...done!
+Finding genes in sequence #131 (1000 bp)...done!
+Finding genes in sequence #132 (1000 bp)...done!
+Finding genes in sequence #133 (1000 bp)...done!
+Finding genes in sequence #134 (1000 bp)...done!
+Finding genes in sequence #135 (1000 bp)...done!
+Finding genes in sequence #136 (1000 bp)...done!
+Finding genes in sequence #137 (1000 bp)...done!
+Finding genes in sequence #138 (1000 bp)...done!
+Finding genes in sequence #139 (1000 bp)...done!
+Finding genes in sequence #140 (1000 bp)...done!
+Finding genes in sequence #141 (1000 bp)...done!
+Finding genes in sequence #142 (5000 bp)...done!
+Finding genes in sequence #143 (5000 bp)...done!
+Finding genes in sequence #144 (5000 bp)...done!
+Finding genes in sequence #145 (5000 bp)...done!
+Finding genes in sequence #146 (5000 bp)...done!
+Finding genes in sequence #147 (5000 bp)...done!
+Finding genes in sequence #148 (5000 bp)...done!
+Finding genes in sequence #149 (5000 bp)...done!
+Finding genes in sequence #150 (5000 bp)...done!
+Finding genes in sequence #151 (5000 bp)...done!
+Finding genes in sequence #152 (5000 bp)...done!
+Finding genes in sequence #153 (5000 bp)...done!
+Finding genes in sequence #154 (5000 bp)...done!
+Finding genes in sequence #155 (5000 bp)...done!
+Finding genes in sequence #156 (5000 bp)...done!
+Finding genes in sequence #157 (5000 bp)...done!
+Finding genes in sequence #158 (5000 bp)...done!
+Finding genes in sequence #159 (5000 bp)...done!
+Finding genes in sequence #160 (5000 bp)...done!
+Finding genes in sequence #161 (5000 bp)...done!
+Finding genes in sequence #162 (5000 bp)...done!
+Finding genes in sequence #163 (5000 bp)...done!
+Finding genes in sequence #164 (5000 bp)...done!
+Finding genes in sequence #165 (5000 bp)...done!
+Finding genes in sequence #166 (5000 bp)...done!
+Finding genes in sequence #167 (5000 bp)...done!
+Finding genes in sequence #168 (5000 bp)...done!
+Finding genes in sequence #169 (5000 bp)...done!
+Finding genes in sequence #170 (5000 bp)...done!
+Finding genes in sequence #171 (5000 bp)...done!
+Finding genes in sequence #172 (5000 bp)...done!
+Finding genes in sequence #173 (5000 bp)...done!
+Finding genes in sequence #174 (5000 bp)...done!
+Finding genes in sequence #175 (5000 bp)...done!
+Finding genes in sequence #176 (5000 bp)...done!
+Finding genes in sequence #177 (5000 bp)...done!
+Finding genes in sequence #178 (5000 bp)...done!
+Finding genes in sequence #179 (5000 bp)...done!
+Finding genes in sequence #180 (5000 bp)...done!
+Finding genes in sequence #181 (5000 bp)...done!
+Finding genes in sequence #182 (5000 bp)...done!
+Finding genes in sequence #183 (5000 bp)...done!
+Finding genes in sequence #184 (5000 bp)...done!
+Finding genes in sequence #185 (5000 bp)...done!
+Finding genes in sequence #186 (5000 bp)...done!
+Finding genes in sequence #187 (5000 bp)...done!
+Finding genes in sequence #188 (5000 bp)...done!
+Finding genes in sequence #189 (5000 bp)...done!
+Finding genes in sequence #190 (5000 bp)...done!
+Finding genes in sequence #191 (10000 bp)...done!
+Finding genes in sequence #192 (10000 bp)...done!
+Finding genes in sequence #193 (10000 bp)...done!
+Finding genes in sequence #194 (10000 bp)...done!
+Finding genes in sequence #195 (10000 bp)...done!
+Finding genes in sequence #196 (10000 bp)...done!
+Finding genes in sequence #197 (10000 bp)...done!
+Finding genes in sequence #198 (10000 bp)...done!
+Finding genes in sequence #199 (10000 bp)...done!
+Finding genes in sequence #200 (10000 bp)...done!
+Finding genes in sequence #201 (10000 bp)...done!
+Finding genes in sequence #202 (10000 bp)...done!
+Finding genes in sequence #203 (10000 bp)...done!
+Finding genes in sequence #204 (10000 bp)...done!
+Finding genes in sequence #205 (10000 bp)...done!
+Finding genes in sequence #206 (10000 bp)...done!
+Finding genes in sequence #207 (10000 bp)...done!
+Finding genes in sequence #208 (10000 bp)...done!
+Finding genes in sequence #209 (10000 bp)...done!
+Finding genes in sequence #210 (10000 bp)...done!
+Finding genes in sequence #211 (10000 bp)...done!
+Finding genes in sequence #212 (10000 bp)...done!
+Finding genes in sequence #213 (10000 bp)...done!
+Finding genes in sequence #214 (10000 bp)...done!
+Finding genes in sequence #215 (10000 bp)...done!
+Finding genes in sequence #216 (10000 bp)...done!
+Finding genes in sequence #217 (10000 bp)...done!
+Finding genes in sequence #218 (10000 bp)...done!
+Finding genes in sequence #219 (10000 bp)...done!
+Finding genes in sequence #220 (10000 bp)...done!
+Finding genes in sequence #221 (10000 bp)...done!
+Finding genes in sequence #222 (10000 bp)...done!
+Finding genes in sequence #223 (10000 bp)...done!
+Finding genes in sequence #224 (10000 bp)...done!
+Finding genes in sequence #225 (10000 bp)...done!
+Finding genes in sequence #226 (10000 bp)...done!
+Finding genes in sequence #227 (10000 bp)...done!
+Finding genes in sequence #228 (10000 bp)...done!
+Finding genes in sequence #229 (10000 bp)...done!
+Finding genes in sequence #230 (10000 bp)...done!
+Finding genes in sequence #231 (10000 bp)...done!
+Finding genes in sequence #232 (10000 bp)...done!
+Finding genes in sequence #233 (10000 bp)...done!
+Finding genes in sequence #234 (10000 bp)...done!
+Finding genes in sequence #235 (10000 bp)...done!
+Finding genes in sequence #236 (10000 bp)...done!
+Finding genes in sequence #237 (10000 bp)...done!
+Finding genes in sequence #238 (10000 bp)...done!
+Finding genes in sequence #239 (10000 bp)...done!
+Finding genes in sequence #240 (10000 bp)...done!
+Finding genes in sequence #241 (10000 bp)...done!
+Finding genes in sequence #242 (10000 bp)...done!
+Finding genes in sequence #243 (5538 bp)...done!
+Finding genes in sequence #244 (126504 bp)...done!
+Finding genes in sequence #245 (6071 bp)...done!
+Finding genes in sequence #246 (6995 bp)...done!
+Finding genes in sequence #247 (7606 bp)...done!
+diamond v0.9.14.115 | by Benjamin Buchfink <buchfink@gmail.com>
+Licensed under the GNU AGPL <https://www.gnu.org/licenses/agpl.txt>
+Check http://github.com/bbuchfink/diamond for updates.
+
+#CPU threads: 6
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+#Target sequences to report alignments for: 1000
+Temporary directory: toy_set_result
+Opening the database...  [2.4e-05s]
+Opening the input file...  [3.3e-05s]
+Opening the output file...  [3.9e-05s]
+Loading query sequences...  [0.004156s]
+Masking queries...  [0.033221s]
+Building query seed set...  [0.000208s]
+Algorithm: Double-indexed
+Building query histograms...  [0.013712s]
+Allocating buffers...  [5.7e-05s]
+Loading reference sequences...  [0.003327s]
+Building reference histograms...  [0.031689s]
+Allocating buffers...  [5.1e-05s]
+Initializing temporary storage...  [0.003779s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 0.
+Building reference index...  [0.007437s]
+Building query index...  [0.003455s]
+Building seed filter...  [0.001533s]
+Searching alignments...  [0.015999s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 1.
+Building reference index...  [0.008063s]
+Building query index...  [0.003628s]
+Building seed filter...  [0.0015s]
+Searching alignments...  [0.014771s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 2.
+Building reference index...  [0.008699s]
+Building query index...  [0.003838s]
+Building seed filter...  [0.001573s]
+Searching alignments...  [0.014371s]
+Processing query chunk 0, reference chunk 0, shape 0, index chunk 3.
+Building reference index...  [0.006663s]
+Building query index...  [0.002866s]
+Building seed filter...  [0.001542s]
+Searching alignments...  [0.013899s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 0.
+Building reference index...  [0.006381s]
+Building query index...  [0.002816s]
+Building seed filter...  [0.001531s]
+Searching alignments...  [0.012921s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 1.
+Building reference index...  [0.007675s]
+Building query index...  [0.003387s]
+Building seed filter...  [0.001519s]
+Searching alignments...  [0.012736s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 2.
+Building reference index...  [0.008489s]
+Building query index...  [0.004021s]
+Building seed filter...  [0.00149s]
+Searching alignments...  [0.012955s]
+Processing query chunk 0, reference chunk 0, shape 1, index chunk 3.
+Building reference index...  [0.006351s]
+Building query index...  [0.002778s]
+Building seed filter...  [0.001508s]
+Searching alignments...  [0.013374s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 0.
+Building reference index...  [0.006708s]
+Building query index...  [0.002847s]
+Building seed filter...  [0.001523s]
+Searching alignments...  [0.013123s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 1.
+Building reference index...  [0.007691s]
+Building query index...  [0.003458s]
+Building seed filter...  [0.001555s]
+Searching alignments...  [0.013752s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 2.
+Building reference index...  [0.008566s]
+Building query index...  [0.003759s]
+Building seed filter...  [0.001539s]
+Searching alignments...  [0.013009s]
+Processing query chunk 0, reference chunk 0, shape 2, index chunk 3.
+Building reference index...  [0.006421s]
+Building query index...  [0.002882s]
+Building seed filter...  [0.001516s]
+Searching alignments...  [0.013815s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 0.
+Building reference index...  [0.00643s]
+Building query index...  [0.002901s]
+Building seed filter...  [0.001546s]
+Searching alignments...  [0.013261s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 1.
+Building reference index...  [0.007785s]
+Building query index...  [0.00346s]
+Building seed filter...  [0.001506s]
+Searching alignments...  [0.013547s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 2.
+Building reference index...  [0.008557s]
+Building query index...  [0.00374s]
+Building seed filter...  [0.001515s]
+Searching alignments...  [0.013546s]
+Processing query chunk 0, reference chunk 0, shape 3, index chunk 3.
+Building reference index...  [0.006466s]
+Building query index...  [0.002872s]
+Building seed filter...  [0.00151s]
+Searching alignments...  [0.014231s]
+Processing query chunk 0, reference chunk 0, shape 4, index chunk 0.
+Building reference index...  [0.006562s]
+Building query index...  [0.002984s]
+Building seed filter...  [0.001582s]
+Searching alignments...  [0.013816s]
+Processing query chunk 0, reference chunk 0, shape 4, index chunk 1.
+Building reference index...  [0.008052s]
+Building query index...  [0.003589s]
+Building seed filter...  [0.001544s]
+Searching alignments...  [0.013898s]
+Processing query chunk 0, reference chunk 0, shape 4, index chunk 2.
+Building reference index...  [0.009249s]
+Building query index...  [0.003982s]
+Building seed filter...  [0.001557s]
+Searching alignments...  [0.01367s]
+Processing query chunk 0, reference chunk 0, shape 4, index chunk 3.
+Building reference index...  [0.00642s]
+Building query index...  [0.002871s]
+Building seed filter...  [0.001575s]
+Searching alignments...  [0.013967s]
+Processing query chunk 0, reference chunk 0, shape 5, index chunk 0.
+Building reference index...  [0.006491s]
+Building query index...  [0.002827s]
+Building seed filter...  [0.001547s]
+Searching alignments...  [0.013035s]
+Processing query chunk 0, reference chunk 0, shape 5, index chunk 1.
+Building reference index...  [0.007837s]
+Building query index...  [0.003428s]
+Building seed filter...  [0.001569s]
+Searching alignments...  [0.013117s]
+Processing query chunk 0, reference chunk 0, shape 5, index chunk 2.
+Building reference index...  [0.008544s]
+Building query index...  [0.003797s]
+Building seed filter...  [0.001534s]
+Searching alignments...  [0.013668s]
+Processing query chunk 0, reference chunk 0, shape 5, index chunk 3.
+Building reference index...  [0.006374s]
+Building query index...  [0.00284s]
+Building seed filter...  [0.001531s]
+Searching alignments...  [0.013762s]
+Processing query chunk 0, reference chunk 0, shape 6, index chunk 0.
+Building reference index...  [0.00626s]
+Building query index...  [0.00279s]
+Building seed filter...  [0.001525s]
+Searching alignments...  [0.012829s]
+Processing query chunk 0, reference chunk 0, shape 6, index chunk 1.
+Building reference index...  [0.007703s]
+Building query index...  [0.003437s]
+Building seed filter...  [0.001586s]
+Searching alignments...  [0.012469s]
+Processing query chunk 0, reference chunk 0, shape 6, index chunk 2.
+Building reference index...  [0.008478s]
+Building query index...  [0.0037s]
+Building seed filter...  [0.00151s]
+Searching alignments...  [0.013059s]
+Processing query chunk 0, reference chunk 0, shape 6, index chunk 3.
+Building reference index...  [0.006375s]
+Building query index...  [0.002785s]
+Building seed filter...  [0.001511s]
+Searching alignments...  [0.013687s]
+Processing query chunk 0, reference chunk 0, shape 7, index chunk 0.
+Building reference index...  [0.006384s]
+Building query index...  [0.002826s]
+Building seed filter...  [0.001493s]
+Searching alignments...  [0.012987s]
+Processing query chunk 0, reference chunk 0, shape 7, index chunk 1.
+Building reference index...  [0.007763s]
+Building query index...  [0.003453s]
+Building seed filter...  [0.001527s]
+Searching alignments...  [0.013983s]
+Processing query chunk 0, reference chunk 0, shape 7, index chunk 2.
+Building reference index...  [0.008544s]
+Building query index...  [0.003748s]
+Building seed filter...  [0.001516s]
+Searching alignments...  [0.013365s]
+Processing query chunk 0, reference chunk 0, shape 7, index chunk 3.
+Building reference index...  [0.006491s]
+Building query index...  [0.00281s]
+Building seed filter...  [0.001508s]
+Searching alignments...  [0.013904s]
+Processing query chunk 0, reference chunk 0, shape 8, index chunk 0.
+Building reference index...  [0.00643s]
+Building query index...  [0.002871s]
+Building seed filter...  [0.001597s]
+Searching alignments...  [0.013391s]
+Processing query chunk 0, reference chunk 0, shape 8, index chunk 1.
+Building reference index...  [0.007864s]
+Building query index...  [0.003485s]
+Building seed filter...  [0.00159s]
+Searching alignments...  [0.013844s]
+Processing query chunk 0, reference chunk 0, shape 8, index chunk 2.
+Building reference index...  [0.008612s]
+Building query index...  [0.003811s]
+Building seed filter...  [0.001537s]
+Searching alignments...  [0.013863s]
+Processing query chunk 0, reference chunk 0, shape 8, index chunk 3.
+Building reference index...  [0.006443s]
+Building query index...  [0.002867s]
+Building seed filter...  [0.001568s]
+Searching alignments...  [0.01481s]
+Processing query chunk 0, reference chunk 0, shape 9, index chunk 0.
+Building reference index...  [0.006393s]
+Building query index...  [0.00287s]
+Building seed filter...  [0.00156s]
+Searching alignments...  [0.012887s]
+Processing query chunk 0, reference chunk 0, shape 9, index chunk 1.
+Building reference index...  [0.007833s]
+Building query index...  [0.003397s]
+Building seed filter...  [0.001534s]
+Searching alignments...  [0.012992s]
+Processing query chunk 0, reference chunk 0, shape 9, index chunk 2.
+Building reference index...  [0.008621s]
+Building query index...  [0.003816s]
+Building seed filter...  [0.001484s]
+Searching alignments...  [0.013649s]
+Processing query chunk 0, reference chunk 0, shape 9, index chunk 3.
+Building reference index...  [0.006342s]
+Building query index...  [0.002846s]
+Building seed filter...  [0.001578s]
+Searching alignments...  [0.013183s]
+Processing query chunk 0, reference chunk 0, shape 10, index chunk 0.
+Building reference index...  [0.00655s]
+Building query index...  [0.002944s]
+Building seed filter...  [0.001553s]
+Searching alignments...  [0.013662s]
+Processing query chunk 0, reference chunk 0, shape 10, index chunk 1.
+Building reference index...  [0.00785s]
+Building query index...  [0.003426s]
+Building seed filter...  [0.001547s]
+Searching alignments...  [0.014059s]
+Processing query chunk 0, reference chunk 0, shape 10, index chunk 2.
+Building reference index...  [0.0086s]
+Building query index...  [0.003769s]
+Building seed filter...  [0.001569s]
+Searching alignments...  [0.013618s]
+Processing query chunk 0, reference chunk 0, shape 10, index chunk 3.
+Building reference index...  [0.006342s]
+Building query index...  [0.002886s]
+Building seed filter...  [0.00152s]
+Searching alignments...  [0.013267s]
+Processing query chunk 0, reference chunk 0, shape 11, index chunk 0.
+Building reference index...  [0.006298s]
+Building query index...  [0.002803s]
+Building seed filter...  [0.001562s]
+Searching alignments...  [0.012535s]
+Processing query chunk 0, reference chunk 0, shape 11, index chunk 1.
+Building reference index...  [0.007703s]
+Building query index...  [0.003354s]
+Building seed filter...  [0.001517s]
+Searching alignments...  [0.012965s]
+Processing query chunk 0, reference chunk 0, shape 11, index chunk 2.
+Building reference index...  [0.008501s]
+Building query index...  [0.003667s]
+Building seed filter...  [0.001497s]
+Searching alignments...  [0.013003s]
+Processing query chunk 0, reference chunk 0, shape 11, index chunk 3.
+Building reference index...  [0.006286s]
+Building query index...  [0.002788s]
+Building seed filter...  [0.001503s]
+Searching alignments...  [0.01306s]
+Processing query chunk 0, reference chunk 0, shape 12, index chunk 0.
+Building reference index...  [0.006361s]
+Building query index...  [0.002845s]
+Building seed filter...  [0.001527s]
+Searching alignments...  [0.012933s]
+Processing query chunk 0, reference chunk 0, shape 12, index chunk 1.
+Building reference index...  [0.00786s]
+Building query index...  [0.003441s]
+Building seed filter...  [0.001545s]
+Searching alignments...  [0.012636s]
+Processing query chunk 0, reference chunk 0, shape 12, index chunk 2.
+Building reference index...  [0.008763s]
+Building query index...  [0.003836s]
+Building seed filter...  [0.001527s]
+Searching alignments...  [0.013653s]
+Processing query chunk 0, reference chunk 0, shape 12, index chunk 3.
+Building reference index...  [0.006297s]
+Building query index...  [0.002801s]
+Building seed filter...  [0.001509s]
+Searching alignments...  [0.013518s]
+Processing query chunk 0, reference chunk 0, shape 13, index chunk 0.
+Building reference index...  [0.006365s]
+Building query index...  [0.002783s]
+Building seed filter...  [0.001528s]
+Searching alignments...  [0.013034s]
+Processing query chunk 0, reference chunk 0, shape 13, index chunk 1.
+Building reference index...  [0.007688s]
+Building query index...  [0.003404s]
+Building seed filter...  [0.001535s]
+Searching alignments...  [0.013167s]
+Processing query chunk 0, reference chunk 0, shape 13, index chunk 2.
+Building reference index...  [0.008474s]
+Building query index...  [0.003827s]
+Building seed filter...  [0.001553s]
+Searching alignments...  [0.0139s]
+Processing query chunk 0, reference chunk 0, shape 13, index chunk 3.
+Building reference index...  [0.006344s]
+Building query index...  [0.002834s]
+Building seed filter...  [0.001556s]
+Searching alignments...  [0.013077s]
+Processing query chunk 0, reference chunk 0, shape 14, index chunk 0.
+Building reference index...  [0.006388s]
+Building query index...  [0.002841s]
+Building seed filter...  [0.001566s]
+Searching alignments...  [0.013197s]
+Processing query chunk 0, reference chunk 0, shape 14, index chunk 1.
+Building reference index...  [0.007743s]
+Building query index...  [0.003471s]
+Building seed filter...  [0.001523s]
+Searching alignments...  [0.013352s]
+Processing query chunk 0, reference chunk 0, shape 14, index chunk 2.
+Building reference index...  [0.008527s]
+Building query index...  [0.00373s]
+Building seed filter...  [0.001531s]
+Searching alignments...  [0.01376s]
+Processing query chunk 0, reference chunk 0, shape 14, index chunk 3.
+Building reference index...  [0.006345s]
+Building query index...  [0.002817s]
+Building seed filter...  [0.001516s]
+Searching alignments...  [0.013566s]
+Processing query chunk 0, reference chunk 0, shape 15, index chunk 0.
+Building reference index...  [0.006325s]
+Building query index...  [0.002822s]
+Building seed filter...  [0.001597s]
+Searching alignments...  [0.013052s]
+Processing query chunk 0, reference chunk 0, shape 15, index chunk 1.
+Building reference index...  [0.007705s]
+Building query index...  [0.003404s]
+Building seed filter...  [0.00154s]
+Searching alignments...  [0.013547s]
+Processing query chunk 0, reference chunk 0, shape 15, index chunk 2.
+Building reference index...  [0.008415s]
+Building query index...  [0.003673s]
+Building seed filter...  [0.001471s]
+Searching alignments...  [0.013216s]
+Processing query chunk 0, reference chunk 0, shape 15, index chunk 3.
+Building reference index...  [0.006231s]
+Building query index...  [0.00279s]
+Building seed filter...  [0.00148s]
+Searching alignments...  [0.013241s]
+Deallocating buffers...  [7e-06s]
+Computing alignments...  [0.462791s]
+Deallocating reference...  [7e-06s]
+Loading reference sequences...  [1.8e-05s]
+Deallocating buffers...  [3e-06s]
+Deallocating queries...  [4e-06s]
+Loading query sequences...  [7e-06s]
+Closing the input file...  [1e-05s]
+Closing the output file...  [0.00015s]
+Closing the database file...  [4e-06s]
+Total time = 2.19281s
+Reported 22367 pairwise alignments, 22367 HSPs.
+3533 queries aligned.

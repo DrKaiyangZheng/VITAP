@@ -1,0 +1,236 @@
+Genome_ID	lineage	lineage_score	Confidence_level
+AB043679	Versovirus VfO3K6;Versovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.580646539754912	High-confidence
+AB043679|_sliding:1-1000	-;Versovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.1792751010799898	High-confidence
+AY338217	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.900492644248	High-confidence
+BK013407	-;Pujohnavirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.9808072626458733	High-confidence
+BK013480	-;Weheuvirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.623934809296886	High-confidence
+BK013889	-;-;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.9484400812197314	High-confidence
+BK013891	-;Weheuvirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.0795830202367334	High-confidence
+BK013891|_sliding:3001-4000	-;Weheuvirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.3040136954032253	High-confidence
+DQ079869	-;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6118196888757876	High-confidence
+DQ079871.1	Alphatrevirus ID21;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6449999163937468	High-confidence
+DQ079876	-;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.757249144065968	High-confidence
+DQ079877.1	Gequatrovirus G4;Gequatrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.558312763533514	High-confidence
+EU304328	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1386434018692166	High-confidence
+EU304328|_sliding:1-10000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.090262427008046	High-confidence
+EU304328|_sliding:1-5000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.914630548608197	High-confidence
+EU304328|_sliding:100001-105000	Micromonas pusilla virus SP1;Prasinovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.709333083511085	High-confidence
+EU304328|_sliding:160001-161000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9890260834313535	High-confidence
+EU304328|_sliding:170001-180000	Micromonas pusilla virus SP1;Prasinovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7429669659038125	High-confidence
+EU304328|_sliding:171001-172000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.685466283287244	High-confidence
+EU304328|_sliding:50001-55000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7654487628837403	High-confidence
+EU304328|_sliding:60001-70000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.151427333984284	High-confidence
+EU304328|_sliding:70001-75000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.422684702637781	High-confidence
+EU304328|_sliding:80001-90000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3510927354885371	High-confidence
+EU304328|_sliding:90001-100000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9241337956160196	High-confidence
+EU916176|_sliding:100001-110000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1038913872840304	High-confidence
+EU916176|_sliding:133001-134000	Ectocarpus siliculosus virus 1;Phaeovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.1717556270416667	High-confidence
+EU916176|_sliding:34001-35000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2384348484793402	High-confidence
+EU916176|_sliding:49001-50000	Ectocarpus siliculosus virus 1;Phaeovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9825045273055557	High-confidence
+EU916176|_sliding:50001-60000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1507306471355554	High-confidence
+FJ904927	Fibrovirus fs1;Fibrovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.584627296235352	High-confidence
+FR667955	-;Teseptimavirus;Autographiviridae;[Order]_Autographiviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.4277264015795716	High-confidence
+FR667955|_sliding:10001-20000	-;Teseptimavirus;Autographiviridae;[Order]_Autographiviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9035135946824326	High-confidence
+FR667955|_sliding:20001-30000	Teseptimavirus N30;Teseptimavirus;Autographiviridae;[Order]_Autographiviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.307045864740918	High-confidence
+J02448	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	2.4420379101105647	High-confidence
+J02448|_sliding:1-5000	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	2.3851789127935117	High-confidence
+J02448|_sliding:2001-3000	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.635355624769952	High-confidence
+J02448|_sliding:5001-6000	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.7931928488574722	High-confidence
+JN258408	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.598090474215075	High-confidence
+JN258408|_sliding:100001-101000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.6925328165556717	High-confidence
+JN258408|_sliding:1005001-1006000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9488205511379955	High-confidence
+JN258408|_sliding:1030001-1035000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9029683850036851	High-confidence
+JN258408|_sliding:1030001-1040000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.290541104954839	High-confidence
+JN258408|_sliding:1032001-1033000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.13448253390018	High-confidence
+JN258408|_sliding:1045001-1046000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.685689055864077	High-confidence
+JN258408|_sliding:1046001-1047000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3066391102489459	High-confidence
+JN258408|_sliding:1053001-1054000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.9248817245386207	High-confidence
+JN258408|_sliding:1070001-1075000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5259044892661642	High-confidence
+JN258408|_sliding:1070001-1080000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5482902227734947	High-confidence
+JN258408|_sliding:1100001-1101000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.150095546023157	High-confidence
+JN258408|_sliding:1100001-1105000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5091457745752692	High-confidence
+JN258408|_sliding:1103001-1104000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9331831956711496	High-confidence
+JN258408|_sliding:1140001-1150000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7889169641031997	High-confidence
+JN258408|_sliding:1143001-1144000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9028003698949552	High-confidence
+JN258408|_sliding:1160001-1170000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0760330729168266	High-confidence
+JN258408|_sliding:1170001-1180000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.104969491837592	High-confidence
+JN258408|_sliding:1179001-1180000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9883228641572754	High-confidence
+JN258408|_sliding:1186001-1187000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.535979521584028	High-confidence
+JN258408|_sliding:1190001-1200000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4382844847324092	High-confidence
+JN258408|_sliding:1218001-1219000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.06818161707772	High-confidence
+JN258408|_sliding:130001-135000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9154125548830828	High-confidence
+JN258408|_sliding:140001-150000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1131406944515676	High-confidence
+JN258408|_sliding:145001-146000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0954517414303202	High-confidence
+JN258408|_sliding:147001-148000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8568674950808757	High-confidence
+JN258408|_sliding:160001-161000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.479941141938502	High-confidence
+JN258408|_sliding:163001-164000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.569136691493294	High-confidence
+JN258408|_sliding:170001-180000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3165210616550105	High-confidence
+JN258408|_sliding:184001-185000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.73570145148515	High-confidence
+JN258408|_sliding:185001-190000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.571885253467114	High-confidence
+JN258408|_sliding:190001-200000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8886236094518014	High-confidence
+JN258408|_sliding:210001-215000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0705659691743765	High-confidence
+JN258408|_sliding:211001-212000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.6733127597264184	High-confidence
+JN258408|_sliding:235001-240000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.7919106183386586	High-confidence
+JN258408|_sliding:243001-244000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.4712804544079603	High-confidence
+JN258408|_sliding:250001-260000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.599159268234385	High-confidence
+JN258408|_sliding:261001-262000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	8.291437179518889	High-confidence
+JN258408|_sliding:290001-295000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7698196726547932	High-confidence
+JN258408|_sliding:300001-305000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.194084781701212	High-confidence
+JN258408|_sliding:330001-340000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5599516330067584	High-confidence
+JN258408|_sliding:331001-332000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0875187973018767	High-confidence
+JN258408|_sliding:358001-359000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9003447715639508	High-confidence
+JN258408|_sliding:380001-390000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.9916499954444133	High-confidence
+JN258408|_sliding:396001-397000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3085350409583143	High-confidence
+JN258408|_sliding:410001-420000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.777492854773133	High-confidence
+JN258408|_sliding:440001-450000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.069151956751719	High-confidence
+JN258408|_sliding:470001-475000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.063414303290294	High-confidence
+JN258408|_sliding:480001-485000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.142462810355695	High-confidence
+JN258408|_sliding:486001-487000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8853965622510005	High-confidence
+JN258408|_sliding:530001-540000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.534387293794147	High-confidence
+JN258408|_sliding:560001-565000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.9203417198362933	High-confidence
+JN258408|_sliding:570001-575000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.9251341523810805	High-confidence
+JN258408|_sliding:570001-580000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.112333094156497	High-confidence
+JN258408|_sliding:610001-620000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.6362327501733365	High-confidence
+JN258408|_sliding:61001-62000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0551985792324974	High-confidence
+JN258408|_sliding:620001-630000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.413926330365716	High-confidence
+JN258408|_sliding:628001-629000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.230865445410124	High-confidence
+JN258408|_sliding:640001-650000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.290575765349848	High-confidence
+JN258408|_sliding:65001-70000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.099302371355578	High-confidence
+JN258408|_sliding:675001-680000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.9823647809224023	High-confidence
+JN258408|_sliding:686001-687000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5349997645669695	High-confidence
+JN258408|_sliding:690001-700000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.810601674547759	High-confidence
+JN258408|_sliding:715001-720000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.335283735432288	High-confidence
+JN258408|_sliding:720001-725000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7949885287918006	High-confidence
+JN258408|_sliding:720001-730000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3733137117602279	High-confidence
+JN258408|_sliding:723001-724000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.593669082694766	High-confidence
+JN258408|_sliding:740001-750000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.5946130726415633	High-confidence
+JN258408|_sliding:745001-750000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.0250790688239135	High-confidence
+JN258408|_sliding:746001-747000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3376930830517075	High-confidence
+JN258408|_sliding:800001-801000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.2925041141239277	High-confidence
+JN258408|_sliding:80001-85000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.558574286245075	High-confidence
+JN258408|_sliding:809001-810000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.7880812017789474	High-confidence
+JN258408|_sliding:815001-820000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.6999006560958705	High-confidence
+JN258408|_sliding:816001-817000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.8977835460750647	High-confidence
+JN258408|_sliding:820001-830000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.426960199524835	High-confidence
+JN258408|_sliding:825001-830000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.9673426313028104	High-confidence
+JN258408|_sliding:834001-835000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.662018823348017	High-confidence
+JN258408|_sliding:837001-838000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.994823890915612	High-confidence
+JN258408|_sliding:840001-841000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3117293058838047	High-confidence
+JN258408|_sliding:845001-850000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.0887782281416745	High-confidence
+JN258408|_sliding:860001-865000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.295365375214374	High-confidence
+JN258408|_sliding:880001-885000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5701300086899974	High-confidence
+JN258408|_sliding:885001-886000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4789043918459133	High-confidence
+JN258408|_sliding:885001-890000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3017554294685516	High-confidence
+JN258408|_sliding:895001-900000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.63122877315177	High-confidence
+JN258408|_sliding:90001-100000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0145024824699966	High-confidence
+JN258408|_sliding:910001-915000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5007205144713747	High-confidence
+JN258408|_sliding:910001-920000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8201950918049792	High-confidence
+JN258408|_sliding:91001-92000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.434357844258976	High-confidence
+JN258408|_sliding:915001-916000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.076701394999763	High-confidence
+JN258408|_sliding:917001-918000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.350324447531137	High-confidence
+JN258408|_sliding:930001-940000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.1307082249124143	High-confidence
+JN258408|_sliding:937001-938000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5273061283896268	High-confidence
+JN258408|_sliding:950001-951000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9287250412569866	High-confidence
+JN258408|_sliding:960001-965000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9527531315082248	High-confidence
+JN258408|_sliding:980001-990000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0594219136916114	High-confidence
+JX257003.1	Cardiovirus A;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	4.377473051718072	High-confidence
+KC292020	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.864472979252443	High-confidence
+KC292020|_sliding:10001-20000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.804707391547741	High-confidence
+KC292020|_sliding:24001-25000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.999833789898271	High-confidence
+KC292020|_sliding:40001-45000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9329651004895483	High-confidence
+KC292020|_sliding:44001-45000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.406375965203152	High-confidence
+KC292020|_sliding:50001-55000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.1053287847874453	High-confidence
+KC292020|_sliding:50001-60000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7157591437220243	High-confidence
+KP264975.1	Bovine rhinitis B virus;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.7082742435184772	High-confidence
+KT728930	Affertcholeramvirus CTXphi;Affertcholeramvirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.6443667654093748	High-confidence
+KU159360	Bovine rhinitis B virus;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.8741225400650903	High-confidence
+KU168861	Bovine rhinitis B virus;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.810182200331744	High-confidence
+KY853667	Xylivirus Xf109;Xylivirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.327384028186796	High-confidence
+KY853667|_sliding:1-5000	Xylivirus Xf109;Xylivirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.2228044404371	High-confidence
+M16020	Cardiovirus B;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.509467203494391	High-confidence
+M16020|_sliding:1-5000	Cardiovirus B;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	2.925888961882433	High-confidence
+MF172923	Cardiovirus B;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.287801574296226	High-confidence
+MG748547	-;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.360534448737614	High-confidence
+MG748547|_sliding:110001-111000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.0443965898270573	High-confidence
+MG748547|_sliding:110001-120000	-;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6606447960421449	High-confidence
+MG748547|_sliding:112001-113000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8501500899987011	High-confidence
+MG748547|_sliding:128001-129000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.860613156303401	High-confidence
+MG748547|_sliding:140001-150000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.5034429882238944	High-confidence
+MG748547|_sliding:148001-149000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.1524952345154056	High-confidence
+MG748547|_sliding:153001-154000	-;-;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4636116061588895	High-confidence
+MG748547|_sliding:20001-21000	-;-;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6212222087315018	High-confidence
+MG748547|_sliding:27001-28000	-;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7869621958869697	High-confidence
+MG748547|_sliding:44001-45000	-;-;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5348539954234222	High-confidence
+MG748547|_sliding:60001-70000	-;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.0733695181587923	High-confidence
+MG748547|_sliding:80001-90000	-;Kuttervirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7232544394298615	High-confidence
+MN966732	-;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.229094097742128	High-confidence
+MN966732|_sliding:110001-115000	-;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4675672571576597	High-confidence
+MN966732|_sliding:110001-120000	-;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.1622667098005393	High-confidence
+MN966732|_sliding:120001-125000	-;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.1009401141015975	High-confidence
+MN966732|_sliding:16001-17000	Thalassavirus AG74;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.000793027276803	High-confidence
+MN966732|_sliding:27001-28000	Thalassavirus AG74;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.49943288683354	High-confidence
+MN966732|_sliding:57001-58000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9440139807669023	High-confidence
+MN966732|_sliding:90001-100000	-;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.1150057526580186	High-confidence
+MN966732|_sliding:95001-100000	-;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.702179047127865	High-confidence
+MT078988	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.307705058536737	High-confidence
+MT078988|_sliding:10001-11000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.5659248035773663	High-confidence
+MT078988|_sliding:1001-2000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	5.4723535526067995	High-confidence
+MT078988|_sliding:110001-111000	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.0658150836943134	High-confidence
+MT078988|_sliding:127001-128000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.9462330811137667	High-confidence
+MT078988|_sliding:146001-147000	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5225297173084174	High-confidence
+MT078988|_sliding:150001-151000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.0628859952802985	High-confidence
+MT078988|_sliding:15001-16000	-;-;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.3004911442867426	High-confidence
+MT078988|_sliding:20001-21000	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.971402911491254	High-confidence
+MT078988|_sliding:30001-40000	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8543938369847903	High-confidence
+MT078988|_sliding:5001-10000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.0475112797372157	High-confidence
+MT078988|_sliding:52001-53000	Agtrevirus EM4;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9865628847602594	High-confidence
+MT078988|_sliding:58001-59000	Agtrevirus EM4;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.023049342026891	High-confidence
+MT078988|_sliding:70001-75000	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7074248200749005	High-confidence
+MT078988|_sliding:7001-8000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.98803383119873	High-confidence
+MT078988|_sliding:85001-90000	-;Agtrevirus;Ackermannviridae;[Order]_Ackermannviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7127918744198762	High-confidence
+MT078988|_sliding:87001-88000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.0147312258434724	High-confidence
+MT460514.1	Thalassavirus AG74;Thalassavirus;Demerecviridae;[Order]_Demerecviridae;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.100552122954158	High-confidence
+MT774377	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.701205144708723	High-confidence
+MT774377|_sliding:1-10000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4470655554569887	High-confidence
+MT774377|_sliding:10001-20000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.1534841002814833	High-confidence
+MT774377|_sliding:15001-20000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.042278010250659	High-confidence
+MT774377|_sliding:40001-50000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	6.290863649969718	High-confidence
+MT774377|_sliding:55001-56000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.482328341338328	High-confidence
+MT774377|_sliding:61001-62000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.350362323429513	High-confidence
+MT774377|_sliding:64001-65000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.6280625104864215	High-confidence
+MT774377|_sliding:71001-72000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.412230475242877	High-confidence
+MT774377|_sliding:80001-81000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4642190430866013	High-confidence
+MT774377|_sliding:80001-90000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.119461141920206	High-confidence
+MT774377|_sliding:84001-85000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6587689180834404	High-confidence
+OP880253	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9266843083799919	High-confidence
+OP880253|_sliding:1-10000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9902651067694735	High-confidence
+OP880253|_sliding:33001-34000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.097534124882934	High-confidence
+OP880253|_sliding:45001-50000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8337324298970121	High-confidence
+OP880253|_sliding:50001-55000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.453229800442448	High-confidence
+OP880253|_sliding:72001-73000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.2725523447968397	High-confidence
+U41758	-;Chlamydiamicrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6228227629651542	High-confidence
+BK013469	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7615066782241423	Medium-confidence
+BK013469|_sliding:1001-2000	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.4679290207900951	Medium-confidence
+BK013780	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7617048850171361	Medium-confidence
+BK014192	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.6919560035097057	Medium-confidence
+EU304328|_sliding:154001-155000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.8492192921465584	Medium-confidence
+EU304328|_sliding:182001-183000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.19131165480859696	Medium-confidence
+EU304328|_sliding:64001-65000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.8644902425619614	Medium-confidence
+EU916176	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.7251219040337961	Medium-confidence
+EU916176|_sliding:1-10000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.8077442542975288	Medium-confidence
+EU916176|_sliding:104001-105000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.5045056040270804	Medium-confidence
+EU916176|_sliding:36001-37000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.25281881428432595	Medium-confidence
+EU916176|_sliding:40001-45000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.1684829859372411	Medium-confidence
+JN258408|_sliding:10001-20000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.7968672842120006	Medium-confidence
+JN258408|_sliding:1038001-1039000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.797598216132265	Medium-confidence
+JN258408|_sliding:1063001-1064000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.6503502465531692	Medium-confidence
+JN258408|_sliding:1245001-1250000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.3007013707626134	Medium-confidence
+JN258408|_sliding:15001-16000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.7456904682792328	Medium-confidence
+JN258408|_sliding:31001-32000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.3383190185454713	Medium-confidence
+JN258408|_sliding:466001-467000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.6116992122603081	Medium-confidence
+JN258408|_sliding:728001-729000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.8511098936450601	Medium-confidence
+JN258408|_sliding:970001-971000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.8469029661270753	Medium-confidence
+JN258408|_sliding:980001-981000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.80427682130195	Medium-confidence
+KC292020|_sliding:38001-39000	-;-;-;-;-;-;-;-	0.07884635271962316	Low-confidence
+MT774377|_sliding:70001-71000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.7686713129380324	Medium-confidence
+MT774377|_sliding:75001-76000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.487112128295514	Medium-confidence
