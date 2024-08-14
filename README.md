@@ -33,7 +33,7 @@ git clone https://github.com/DrKaiyangZheng/VITAP.git
 cd VITAP
 conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
 ```
-### Installation through conda
+### Installation through conda (Recommanded)
 ```
 conda install bioconda::vitap
 ```
