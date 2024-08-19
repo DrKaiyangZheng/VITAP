@@ -176,9 +176,9 @@ def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_c
 		max_count = 0
 		max_lineage = None
 
-		# If the weight is greater than or equal to 0.9, calculate the average weight from the current point to the end and the corresponding joint taxonomic level
+		# If the weight is greater than or equal to 0.6, calculate the average weight from the current point to the end and the corresponding joint taxonomic level
 		for i, weight in enumerate(weights):
-			if row[weight] >= 0.9:
+			if row[weight] >= 0.6:
 				average = row[weights[i:]].mean()
 				lineage = ";".join(row[lineages[i:]])
 				return pd.Series([average, lineage])
