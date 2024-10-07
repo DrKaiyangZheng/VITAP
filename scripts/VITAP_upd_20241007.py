@@ -237,7 +237,7 @@ def delete_temp_files(path):
 		temp_file.unlink()
 
 #=======================================================================
-args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (Viral Taxonomic Assignment Pipeline, update program) v.1.5, Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: VITAP upd --vmr raw_VMR.csv -o VMR_reformat.csv -d MSL38\n*******************************************************************\n')
+args_parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description = "The VITAP (Viral Taxonomic Assignment Pipeline, update program) v.1.5, Copyright 2024 Kaiyang Zheng, Viral/microbial diversity Lab. Ocean University of China", epilog='*******************************************************************\nExample usage: VITAP upd --vmr raw_VMR.csv -o VMR_reformat.csv -d VMR-MSL\n*******************************************************************\n')
 args_parser.add_argument('--vmr', required=True, help = 'Input raw ICTV VMR source file in csv format.')
 args_parser.add_argument('-o', '--out', required=True, help = 'Reformat ICTV VMR source file for VITAP utilization')
 args_parser.add_argument('-d', '--db', required=True, help = 'You need to assign a name for a new DB')
@@ -329,7 +329,6 @@ for row in rows:
 	if start is not None and end is not None:
 		#os.system(f"seqkit subseq --quiet --id-regexp '^(\\S+)\.\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
 		#os.system(f"seqkit subseq --quiet --id-regexp '^(\\\\S+)\\.\\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
-
 		command = (
 			f"seqkit subseq --quiet --id-regexp '^(\\\\S+)\\.\\s?' --chr {virus_id} "
 			f"-r {start}:{end} {input_fasta} | "
@@ -384,7 +383,7 @@ db_gff_file = os.path.join(updated_DB_folder, f"VMR_genome_{db_name}.gff")
 if not Path(db_prot_file).is_file() or not Path(db_gff_file).is_file():
 	print(f"[INFO] ORF calling for VMR_genome_{db_name}.fasta")
 	with open("VITAP_VMR_update.log", "w") as log_file:
-		subprocess.run(["/Volumes/Research/BioinformaticSoftware/prodigal-gv-master/parallel-prodigal-gv.py", "-t", "6", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file], stdout=log_file, stderr=log_file)
+		subprocess.run(["prodigal", "-p", "meta", "-f", "gff", "-i", db_genome_file, "-a", db_prot_file, "-o", db_gff_file], stdout=log_file, stderr=log_file)
 else:
 	print(f"[INFO] VMR_genome_{db_name}.faa and VMR_genome_{db_name}.gff exist, skipping.")          
 	
