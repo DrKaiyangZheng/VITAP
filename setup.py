@@ -25,7 +25,7 @@ setup(
         'pandas >=1.5',
         'entrez-direct >=16.2',
         'seqkit >=2.5',
-        'prodigal-gv >=2.6',
+        'prodigal >=2.6',
         'setuptools >=65.6',
         'scipy >=1.10.1',
         'networkx >=3.1',
@@ -41,7 +41,7 @@ setup(
         "Programming Language :: Python :: 3",
     ],
     scripts=['scripts/VITAP',
-             'scripts/VITAP_assignment_20240731.py',
-             'scripts/VITAP_upd_20240325.py'
+             'scripts/VITAP_assignment_20241007.py',
+             'scripts/VITAP_upd_20241007.py'
     ]
 )
