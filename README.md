@@ -47,7 +47,7 @@ If you need to prepare or update the VITAP database yourself, the following are 
 #### 3. After you have prepared the *.csv* file, use **VITAP upd** to generate or update the database.
 ```
 cd VITAP
-./VITAP upd --vmr ./ICTV_VMR_MSL38/ICTV_VMR-MSL38_IMGVR_221222.csv -o ./ICTV_VMR_MSL38/ICTV_VMR-MSL38_IMGVR_221222_reformat.csv -d VMR-MSL
+./VITAP upd --vmr ./ICTV_VMR_MSL38/ICTV_VMR-MSL38.csv -o ./ICTV_VMR_MSL38/ICTV_VMR-MSL38_reformat.csv -d VMR-MSL
 ```
 This command shall generate a reformat table from a 9-column table, which can be recognized and use by VITAP.
 ##### **[WARNING]** You need to carefully check if the locus information is correct. Since the original ICTV_VMR_MSL uses Excel for storage, and the start and end loci are separated by a ".", such as “AE006468 (844298.877981)”, Excel might treat it as a floating-point number (omitting the final 0), which could cause errors in the program. Please pay special attention to these categories: Peduoviridae (e.g., AE006468), Belpaoviridae (e.g., LK928904), all GTA-viriform (Bartogtaviriformidae and Rhodogtaviriformidae). The related metadata of these categories is incorrect in ICTV_VMR-MSL38_210426. Please ensure all errors have been corrected and saved.
