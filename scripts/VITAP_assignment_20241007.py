@@ -52,7 +52,6 @@ def deplication_check(fasta_file):
 	else:
 		return
 
-
 def extract_short_sequences(fasta_file, protein_file):
 	fasta_ids = set([record.id for record in SeqIO.parse(fasta_file, "fasta")])
 	
@@ -168,7 +167,6 @@ def taxonomy_assigning(blast_results_file, ictv_file, genome_cutoff_file, taxon_
 	# keep necessary columns
 	taxonomy_assigned_graph = taxon2taxon_df[['qseqid_genome_id', 'sseqid_taxa', f'{taxon_level}_weight']].rename(columns={'qseqid_genome_id': 'Genome_ID', 'sseqid_taxa': taxon_level})    
 	taxonomy_assigned_graph.to_csv(output_file, sep="\t", index=False)
-
 
 def multipartite_taxonomic_graph_generator(result_dir, vmr_mapping_file, taxon_categories):
 	def process_row(row):
@@ -326,7 +324,7 @@ def assignment():
 				with open(input_fasta, 'r') as ifile, open(select_genome, 'r') as sg:
 					merged_file.write(ifile.read())
 					merged_file.write(sg.read())
-			subprocess.run(["/Volumes/Research/BioinformaticSoftware/prodigal-gv-master/parallel-prodigal-gv.py", "-t", "6", "-i", merge_fasta, "-a", input_faa, "-f", "gff", "-o", merge_gff], stdout=log_file, stderr=log_file)
+			subprocess.run(["prodigal", "-p", "meta", "-i", merge_fasta, "-a", input_faa, "-f", "gff", "-o", merge_gff], stdout=log_file, stderr=log_file)
 	else:
 		print(f"[INFO] Using exited file : {input_faa}")           
 	# extract short sequence
@@ -407,22 +405,16 @@ def assignment():
 	best_lineage_df, all_lineage_df = multipartite_taxonomic_graph_generator(result_folder, VMR_csv_file, taxon_categories)
 
 	if args_parser.low_conf:
-		# 定义一个函数来替换前四个元素为 '-'
 		def replace_first_four(lineage):
 			if not isinstance(lineage, str):
-				# 如果 lineage 不是字符串，转换为字符串，或根据需要处理
 				lineage = str(lineage) if not pd.isna(lineage) else ''
 			elements = lineage.split(';')
-			# 替换前四个元素为 '-'
 			replaced_elements = ['-'] * 4
-			# 保留后四个元素，确保它们是字符串，如果不是，则替换为 '-'
 			replaced_elements += [str(e) if isinstance(e, str) else '-' for e in elements[4:8]]
-			# 如果少于8个元素，填充 '-'
 			if len(replaced_elements) < 8:
 				replaced_elements += ['-'] * (8 - len(replaced_elements))
-			return ';'.join(replaced_elements[:8])  # 确保返回8个元素
+			return ';'.join(replaced_elements[:8])
 	
-		# 应用函数替换符合条件的行
 		best_lineage_df.loc[
 			best_lineage_df['Confidence_level'] == 'Low-confidence', 
 			'lineage'
@@ -431,10 +423,8 @@ def assignment():
 			'lineage'
 		].apply(replace_first_four)
 	else:
-		# 移除所有 Confidence_level 为 'Low-confidence' 的行
 		best_lineage_df = best_lineage_df[best_lineage_df['Confidence_level'] != 'Low-confidence']
 
-	# 确保 'lineage' 字段为字符串类型
 	best_lineage_df['lineage'] = best_lineage_df['lineage'].astype(str)
 
 	print("===== Exporting results ===== ")
