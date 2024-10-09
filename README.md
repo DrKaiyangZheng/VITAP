@@ -38,7 +38,7 @@ conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
 conda install bioconda::vitap
 ```
 ### Use the pre-built database
-You may wish to directly download the database rather prepare by your own before using VITAP. The pre-built database (a hybrid database integrated VMR-MSL37, NCBI RefSeq209, and IMG/VR v.4) can be retrived from [Figshare repository]([https://doi.org/10.6084/m9.figshare.25426159.v2]). The database is compressed in *.zip* format, with the compressed package being approximately 0.62 GB and about 2.1 GB after decompression (hash value (sha256) is `13ac7e4790cfdad2a7f0d6c3ebc8a66badfab98138693bb86f7b2a71a91cb951`. You need to place all the folders generated from decompressing the database into the VITAP directory. There should be 3 folders; ignore the MacOSX folder, as I compressed it on my own Mac.
+You may wish to directly download the database rather prepare by your own before using VITAP. The pre-built database (a hybrid database integrated VMR-MSL37, NCBI RefSeq209, and IMG/VR v.4) can be retrived from [Figshare repository]([https://doi.org/10.6084/m9.figshare.25426159.v2]). The database is compressed in *.zip* format, with the compressed package being approximately 0.62 GB and about 2.1 GB after decompression (hash value (sha256): `13ac7e4790cfdad2a7f0d6c3ebc8a66badfab98138693bb86f7b2a71a91cb951`. You need to place all the folders generated from decompressing the database into the VITAP directory. There should be 3 folders; ignore the MacOSX folder, as I compressed it on my own Mac.
 ## Usage
 ### Preparation of database utilized by VITAP
 If you need to prepare or update the VITAP database yourself, the following are the standard steps provided:
