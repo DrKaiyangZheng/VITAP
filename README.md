@@ -42,7 +42,7 @@ You may wish to directly download the database rather prepare by your own before
 ## Usage
 ### Preparation of database utilized by VITAP
 If you need to prepare or update the VITAP database yourself, the following are the standard steps provided:
-#### 1. Explore the ICTV website to retrive and download the latest [VMR_MSL file](https://ictv.global/msl);
+#### 1. Explore the ICTV website to retrive and download the latest [VMR_MSL file](https://ictv.global/vmr);
 #### 2. The downloaded VMR_MSL file is a table with many columns in Excel format. Only **9** columns are required, including **Virus GENBANK accession**,	**Realm**,	**Kingdom**,	**Phylum**,	**Class**,	**Order**,	**Family**,	**Genus**, and	**Species**. You need to extract these columns from original one, prepare another table, and save as *.csv* format.
 #### 3. After you have prepared the *.csv* file, use **VITAP upd** to generate or update the database.
 ```
