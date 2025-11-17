@@ -1,14 +1,15 @@
 from VITAP_assignment_20241007 import taxonomy_assigning
-from scripts.polars import taxonomy_assigning as taxonomy_polars
+from polars_utils import taxonomy_assigning as taxonomy_polars
 import os
 import tempfile
+import shutil
 import pandas as pd 
 # compare two dataframes
 from pandas.testing import assert_frame_equal
 
 import time
 
-
+# --------------- TEST # 1: Taxonomy assignment step --------------- #
 print("[INFO] Testing taxonomy assignment step")
 db_folder = "./test/DB_MSL-demo/"
 target_blast_fp = "./test/toy_set_annotation_result/target_ICTV_blastp.align" 
@@ -43,3 +44,7 @@ assert_frame_equal(species_graph_pandas.reset_index(drop=True),
                    species_graph_polars.reset_index(drop=True),
                    check_dtype=False)
 print("[INFO] The outputs from pandas and polars versions are identical")
+
+
+# cleanup
+shutil.rmtree(result_folder)
