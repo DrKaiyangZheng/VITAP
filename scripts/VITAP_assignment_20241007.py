@@ -72,17 +72,21 @@ def generate_short_gff(short_sequences, short_gff_file):
 	with open(short_gff_file, "w") as gff:
 		for record in short_sequences:
 			gff.write(f"{record.id}\tSeqkit_translate\tCDS\t1\t{len(record)}\tNaN\tNaN\tNaN\tNaN\n")
+          
 
-def orf_count(gff_file):
-	# reading GFF
-	gff_df = pd.read_csv(gff_file, sep="\t", header=None, names=["id", "source", "type", "start", "end", "score", "strand", "phase", "attributes"])
-	# counting number of ORFs for each genome id
-	orf_num_df = gff_df.groupby('id').size().reset_index(name='ORF_number')
-	orf_num_df.set_index('id', inplace=True)
-	return orf_num_df           
-
-def taxonomy_assigning(blast_results_file, ictv_file, genome_cutoff_file, taxon_level, genome_length_file, orf_count_df, output_file, graph_output_file):
+def taxonomy_assigning(blast_results_file, ictv_file, genome_cutoff_file, taxon_level, genome_length_file, gff_file, output_file, graph_output_file):
 	# reading BLAST file
+	
+	def orf_count(gff_file):
+		# reading GFF
+		gff_df = pd.read_csv(gff_file, sep="\t", header=None, names=["id", "source", "type", "start", "end", "score", "strand", "phase", "attributes"])
+		# counting number of ORFs for each genome id
+		orf_num_df = gff_df.groupby('id').size().reset_index(name='ORF_number')
+		orf_num_df.set_index('id', inplace=True)
+		return orf_num_df 
+	
+	orf_count_df = orf_count(gff_file)
+	
 	blast_results = pd.read_csv(blast_results_file, sep="\t", names=["qseqid", "sseqid", f"bitscore"])
 
 	# reading ICTV file
