@@ -1,20 +1,7 @@
-import argparse
 import os
-import glob
-import subprocess
 
-import numpy as np
-import pandas as pd
-from sys import argv, exit
-import time
-from Bio import SeqIO
-from pathlib import Path
-from tqdm import tqdm
-from collections import Counter
 import polars as pl
 from typing import List, Tuple, Dict, Any, Optional
-
-pd.options.mode.chained_assignment = None
 
 def orf_count(gff_file: str) -> pl.DataFrame:
     """
