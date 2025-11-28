@@ -74,6 +74,6 @@ cd VITAP
 #### 5. The 2 taxonomic assignment results: *all_lineages.tsv* includes all possible taxonomic lineages; *best_determined_lineages.tsv* includes best-fit taxonomic lineage of a genome;
 #### 6. A log file (*VITAP_run.log*).
 ## Citation
-If VITAP contributes to your work, I am grateful if you can cite the [Zheng, K. et al. VITAP: a high precision tool for DNA and RNA viral classification based on meta-omic data. Nat Commun 16, 2226 (2025). https://doi.org:10.1038/s41467-025-57500-7]([https://doi.org/10.21203/rs.3.rs-4406120/v1](https://www.nature.com/articles/s41467-025-57500-7]).
+If VITAP contributes to your work, I am grateful if you can cite the [Zheng, K. et al. VITAP: a high precision tool for DNA and RNA viral classification based on meta-omic data. Nat Commun 16, 2226 (2025)](https://www.nature.com/articles/s41467-025-57500-7).
 
 
