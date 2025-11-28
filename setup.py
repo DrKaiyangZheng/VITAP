@@ -25,7 +25,7 @@ setup(
         'pandas >=1.5',
         'entrez-direct >=16.2',
         'seqkit >=2.5',
-        'prodigal >=2.6',
+        'pyrodigal >=3.6',
         'setuptools >=65.6',
         'scipy >=1.10.1',
         'networkx >=3.1',
