@@ -4,7 +4,7 @@ VITAP (Viral Taxonomic Assignment Pipeline), a high-accuracy pipeline for classi
 ## The workflow of VITAP
 ![logo](/images/workflow.png)
 The VITAP contains two main parts: the update part enables to generate the VITAP-specific database based on current viral taxonomic information from ICTV; the prediction part utilizes previously built database to perform taxonomic assignment. The VITAP utilized an algorithm to determine the best-fit taxonomic lineage, and provides result with various confidence level.
-## Undate to VITAP v.1.8
+## Undate to VITAP v.1.10
 We recognized that a major limitation of relying solely on the ICTV VMR for viral taxonomic assignments is the restricted diversity of protein collections, which negatively affects overall annotation rates and may introduce potential biases in the assignment of certain lineages. To address this issue, we incorporated the external protein database UniRef90 in this version to calibrate and supplement taxonomic assignments.
 
 In the UniRef90-based taxonomy fallback, a single sequence often corresponds to multiple open reading frames (ORFs), and these ORFs may produce BLASTp hits to the same or to different taxa. To quantify the representativeness and support of a given taxon within a genome, we defined a `Participation Index` (PI). The `PI` is used to quantify the representativeness of a taxonomic unit inferred from UniRef90 annotations. For a given genome G with a total of `|P_G|` predicted ORFs and a taxonomic unit T, the `PI` is defined as:
@@ -27,7 +27,7 @@ The VITAP is compiled with Python3 and tested on Mac OSX and Linux CentOS, and c
 conda install -n base -c conda-forge mamba -y
 git clone https://github.com/DrKaiyangZheng/VITAP.git
 conda install -n base -c conda-forge mamba -y
-mamba create -n vitap_v1.8 -c conda-forge -c bioconda \
+mamba create -n vitap_v1.10 -c conda-forge -c bioconda \
   python>=3.9,<3.12 \
   diamond=2.1.16 \
   entrez-direct=16.2 \
@@ -46,11 +46,11 @@ mamba create -n vitap_v1.8 -c conda-forge -c bioconda \
 conda install -n base -c conda-forge mamba -y
 git clone https://github.com/DrKaiyangZheng/VITAP.git
 cd VITAP
-mamba env create -f env.yaml -n vitap_v.1.8
+mamba env create -f env.yaml -n vitap_v.1.10
 ```
 ### Installation through conda/mamba (Recommanded)
 ```
-mamba create -n vitap_v1.8 -c conda-forge vitap=1.8
+mamba create -n vitap_v1.8 -c conda-forge vitap=1.10
 ```
 ### Use the pre-built database
 #### Outdated version, not recommended for traditional use! ####
