@@ -17,7 +17,7 @@ By default, `PI` is set to 0.25, corresponding to a scenario in which 50% of the
 
 In a study of viromes from Mariana Trench sediments (unpublished), the annotation rate increased by 11% compared with VITAP v.1.7.
 
-In addition, we replaced *pandas* with *polaris* in several steps and substituted *prodigal* with *pyrodigal*, resulting in a substantial improvement in computational efficiency. Many thanks to [Valentyn](https://github.com/valentynbez).
+In addition, we replaced *pandas* with *polars* in several steps and substituted *prodigal* with *pyrodigal*, resulting in a substantial improvement in computational efficiency. Many thanks to [Valentyn](https://github.com/valentynbez).
 
 Because UniRef90 has been integrated, prebuilt databases are no longer provided.
 ## Installation
