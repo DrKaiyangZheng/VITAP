@@ -7,7 +7,7 @@ from VITAP_upd import upd
 
 BANNER = (
     "*******************************************************************\n"
-    "The VITAP (Viral Taxonomic Assignment Pipeline) v.1.8\n"
+    "The VITAP (Viral Taxonomic Assignment Pipeline) v.1.10\n"
     "*******************************************************************"
 )
 
