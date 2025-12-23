@@ -48,7 +48,7 @@ git clone https://github.com/DrKaiyangZheng/VITAP.git
 cd VITAP
 mamba env create -f env.yaml -n vitap_v.1.10
 ```
-### Installation through conda/mamba (Recommanded)
+### Installation through conda/mamba (Recommanded, pending Bioconda branch merge)
 ```
 mamba create -n vitap_v.1.10 -c conda-forge vitap=1.10
 ```
