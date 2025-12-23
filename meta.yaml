@@ -1,0 +1,16 @@
+requirements:
+  host:
+    - python >=3.10
+    - pip
+    - setuptools
+  run:
+    - python >=3.10
+    - pandas >=1.5
+    - polars >=0.19
+    - tqdm >=4.65.0
+    - biopython >=1.78
+    - pyrodigal >=3.6
+    - diamond =2.1.16
+    - entrez-direct >=16.2
+    - seqkit >=2.10
+    - taxonkit >=0.20
