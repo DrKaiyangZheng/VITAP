@@ -8,7 +8,7 @@ long_description = (curr_dir / "README.md").read_text()
 # https://github.com/pypa/sampleproject/blob/master/setup.py
 setup(
     name='VITAP',
-    version='1.7',
+    version='1.8',
     packages=find_packages(exclude=['images']),
     description='Viral Taxonomic Assignment Pipeline',
     long_description=long_description,
@@ -21,18 +21,14 @@ setup(
     python_requires='>=3.9',
     # https://packaging.python.org/discussions/install-requires-vs-requirements/
     install_requires=[
-        'numpy >=1.25',
-        'pandas >=1.5',
-        'entrez-direct >=16.2',
-        'seqkit >=2.5',
-        'pyrodigal >=3.6',
-        'setuptools >=65.6',
-        'scipy >=1.10.1',
-        'networkx >=3.1',
-        'tqdm >=4.65.0',
-        'biopython >=1.78',
-        'diamond >=0.9',
+        'pandas>=1.5',
+        'polars>=0.19',
+        'tqdm>=4.65.0',
+        'biopython>=1.78',
+        'pyrodigal>=3.6',
+        'setuptools>=65.6',
     ],
+
     classifiers=[
         "Intended Audience :: Science/Research",
         "Natural Language :: English",
@@ -41,7 +37,9 @@ setup(
         "Programming Language :: Python :: 3",
     ],
     scripts=['scripts/VITAP',
-             'scripts/VITAP_assignment_20241007.py',
-             'scripts/VITAP_upd_20241007.py'
+             'scripts/VITAP_assignment.py',
+             'scripts/VITAP_upd.py',
+             'scripts/uniref_taxa_fallback.py',
+             'scripts/uniref90_accession2taxid.py'
     ]
 )
