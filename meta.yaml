@@ -1,16 +1,45 @@
+package:
+  name: vitap
+  version: "1.8"
+
+source:
+  path: .
+
+build:
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
 requirements:
   host:
-    - python >=3.10
+    - python >=3.9
     - pip
     - setuptools
+
   run:
-    - python >=3.10
+    - python >=3.9
     - pandas >=1.5
     - polars >=0.19
+    - pyarrow >=10
     - tqdm >=4.65.0
     - biopython >=1.78
     - pyrodigal >=3.6
+
+    # external tools
     - diamond =2.1.16
     - entrez-direct >=16.2
-    - seqkit >=2.10
-    - taxonkit >=0.20
+    - seqkit
+    - taxonkit
+    - wget
+
+test:
+  commands:
+    - VITAP --help
+    - diamond version
+    - seqkit version
+    - taxonkit version
+
+about:
+  home: https://github.com/DrKaiyangZheng/VITAP
+  license: GPL-3.0-or-later
+  license_family: GPL
+  summary: Viral Taxonomic Assignment Pipeline
