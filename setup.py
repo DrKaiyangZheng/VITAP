@@ -18,11 +18,12 @@ setup(
     author='Kaiyang Zheng',
     author_email='zhengkaiyang@stu.ouc.edu.cn',
     keywords=['virus', 'metagenomics', 'metatranscriptomics', 'viral taxonomy'],
-    python_requires='>=3.10',
+    python_requires='>=3.9',
     # https://packaging.python.org/discussions/install-requires-vs-requirements/
     install_requires=[
         'pandas>=1.5',
         'polars>=0.19',
+        'pyarrow >=20',
         'tqdm>=4.65.0',
         'biopython>=1.78',
         'pyrodigal>=3.6',
