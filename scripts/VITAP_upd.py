@@ -62,8 +62,13 @@ def extract_start_end_sites(virus_id):
 # Download genome
 # =========================================================
 
-def download_and_process_genome(row):
-    global completed_downloads
+def download_and_process_genome(
+    row,
+    output_folder,
+    downloaded_ids,
+    progress_bar,
+    counter_lock,
+):
     virus_id = row[0]
 
     if virus_id in downloaded_ids:
@@ -73,18 +78,17 @@ def download_and_process_genome(row):
 
     output_file = os.path.join(output_folder, f"{virus_id}.fasta")
 
-    for attempt in range(10):
-        with open("VITAP_VMR_update.log", "a") as log_file:
+    for _ in range(10):
+        with open("VITAP_VMR_update.log", "a") as log_file, open(output_file, "w") as out:
             subprocess.run(
                 ["efetch", "-id", virus_id, "-format", "fasta", "-db", "nuccore"],
-                stdout=open(output_file, "w"),
+                stdout=out,
                 stderr=log_file
             )
         if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
             break
 
     with counter_lock:
-        completed_downloads += 1
         progress_bar.update(1)
 
 # =========================================================
@@ -519,10 +523,10 @@ def delete_temp_files(path):
 #=======================================================================
 def upd(args):
     # ===== Loading initial VMR table =====
-    input_file = args_parser.vmr
-    output_file = args_parser.out
+    input_file = args.vmr
+    output_file = args.out
+    db_name = args.db
     output_folder = "VMR_Genome"
-    db_name = args_parser.db
     os.makedirs(output_folder, exist_ok=True)
     VMR_csv_file = output_file
 
@@ -564,28 +568,40 @@ def upd(args):
             exit()
 
     # ===== Downloading genome FASTA =====
+    # ===== Load VMR rows =====
+    with open(VMR_csv_file, "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader)          # skip header
+        rows = list(reader)
+
+    total_rows = len(rows)
+
     VMR_csv_file = output_file
 
     counter_lock = Lock()
 
-    completed_downloads = 0
+    downloaded_ids = {
+        f[:-6] for f in os.listdir(output_folder) if f.endswith(".fasta")
+    }
 
-    downloaded_ids = {file[:-6] for file in os.listdir(output_folder) if file.endswith('.fasta')}
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        progress_bar = tqdm(total=total_rows, desc="Downloading genomes")
+        futures = [
+            executor.submit(
+                download_and_process_genome,
+                row,
+                output_folder,
+                downloaded_ids,
+                progress_bar,
+                counter_lock,
+            )
+            for row in rows
+        ]
 
-    with open(VMR_csv_file, "r", encoding="utf-8") as f:
-        reader = csv.reader(f)
+        for future in as_completed(futures):
+            future.result()
 
-        next(reader)
-        rows = list(reader)
-        total_rows = len(rows)
-
-        # efetch allows parallel downloads using up to 3 threads
-        with ThreadPoolExecutor(max_workers=3) as executor:
-            progress_bar = tqdm(total=total_rows, desc="Downloading genomes")
-            futures = [executor.submit(download_and_process_genome, row) for row in rows]
-            for future in as_completed(futures):
-                future.result()
-            progress_bar.close()
+        progress_bar.close()
 
     # Processing integrated viral sequences
     for row in rows:
