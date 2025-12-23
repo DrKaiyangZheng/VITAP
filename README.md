@@ -4,43 +4,57 @@ VITAP (Viral Taxonomic Assignment Pipeline), a high-accuracy pipeline for classi
 ## The workflow of VITAP
 ![logo](/images/workflow.png)
 The VITAP contains two main parts: the update part enables to generate the VITAP-specific database based on current viral taxonomic information from ICTV; the prediction part utilizes previously built database to perform taxonomic assignment. The VITAP utilized an algorithm to determine the best-fit taxonomic lineage, and provides result with various confidence level.
+## Undate to VITAP v.1.8
+We recognized that a major limitation of relying solely on the ICTV VMR for viral taxonomic assignments is the restricted diversity of protein collections, which negatively affects overall annotation rates and may introduce potential biases in the assignment of certain lineages. To address this issue, we incorporated the external protein database UniRef90 in this version to calibrate and supplement taxonomic assignments.
+
+In the UniRef90-based taxonomy fallback, a single sequence often corresponds to multiple open reading frames (ORFs), and these ORFs may produce BLASTp hits to the same or to different taxa. To quantify the representativeness and support of a given taxon within a genome, we defined a `Participation Index` (PI). The `PI` is used to quantify the representativeness of a taxonomic unit inferred from UniRef90 annotations. For a given genome G with a total of `|P_G|` predicted ORFs and a taxonomic unit T, the `PI` is defined as:
+
+`PI(G, T) = |P_{G,T}| / |P_G|`,
+
+where |P_{G,T}| denotes the number of ORFs in genome G whose UniRef90 hits are assigned to taxon T. The `PI` ranges from 0 to 1 and reflects the proportion of ORFs supporting a given taxonomic assignment.
+
+By default, `PI` is set to 0.25, corresponding to a scenario in which 50% of the ORFs in genome G (referring to geNomad) are assigned to taxon A, and the ratio of the summed bitscore for taxon A to the maximum summed bitscore across all taxa in genome G is 0.5. This harmonization parameter helps avoid misleading taxonomic assignments arising from two scenarios: (1) a single ORF exhibiting an exceptionally high bitscore to taxon A, or (2) multiple ORFs mapping to taxon A but with generally low sequence similarity.
+
+In a study of viromes from Mariana Trench sediments (unpublished), the annotation rate increased by 11% compared with VITAP v1.7.
+
+In addition, we replaced *pandas* with *polaris* in several steps and substituted *prodigal* with *pyrodigal*, resulting in a substantial improvement in computational efficiency. Many thanks to [Valentyn](https://github.com/valentynbez).
+
+Because UniRef90 has been integrated, prebuilt databases are no longer provided.
 ## Installation
 The VITAP is compiled with Python3 and tested on Mac OSX and Linux CentOS, and can run on the above two systems.
-### Required Dependencies
-####   · biopython  ≥1.78
-####   · diamond  ≥0.9
-####   · entrez-direct  ≥16.2
-####   · networkx  ≥3.1
-####   · numpy  ≥1.25
-####   · pandas  ≥1.5.3
-####   · prodigal  ≥2.6.3
-####   · python  ≥3.9
-####   · scipy  ≥1.10
-####   · seqkit  ≥2.5
-####   · tqdm  ≥4.65
-####   · wget  1.21
-All these dependences can be installed using Anaconda
-### Installation from source code
-For MacOS users,
+### Manually deployed environment
 ```
+conda install -n base -c conda-forge mamba -y
+git clone https://github.com/DrKaiyangZheng/VITAP.git
+conda install -n base -c conda-forge mamba -y
+mamba create -n vitap_v1.8 -c conda-forge -c bioconda \
+  python>=3.9,<3.12 \
+  diamond=2.1.16 \
+  entrez-direct=16.2 \
+  seqkit \
+  taxonkit \
+  pandas \
+  polars \
+  pyarrow \
+  tqdm \
+  biopython \
+  pyrodigal \
+  -y
+```
+### Deploy the environment via provided images
+```
+conda install -n base -c conda-forge mamba -y
 git clone https://github.com/DrKaiyangZheng/VITAP.git
 cd VITAP
-conda env create -f VITAP_conda_environment_OSX.yaml -n VITAP
+mamba env create -f env.yaml -n vitap_v.1.8
 ```
-For Linux users,
+### Installation through conda/mamba (Recommanded)
 ```
-git clone https://github.com/DrKaiyangZheng/VITAP.git
-cd VITAP
-conda env create -f VITAP_conda_environment_Linux.yaml -n VITAP
-```
-### Installation through conda (Recommanded)
-```
-conda install bioconda::vitap
+mamba create -n vitap_v1.8 -c conda-forge vitap=1.8
 ```
 ### Use the pre-built database
-You may wish to directly download the database rather prepare by your own before using VITAP. The pre-built database (a hybrid database integrated VMR-MSL37, NCBI RefSeq209, and IMG/VR v.4) can be retrived from [Figshare repository](https://doi.org/10.6084/m9.figshare.25426159.v3). The database is compressed in *.zip* format, with the compressed package being approximately 0.62 GB and about 2.1 GB after decompression (sha256: `13ac7e4790cfdad2a7f0d6c3ebc8a66badfab98138693bb86f7b2a71a91cb951`). You need to place all the folders generated from decompressing the database into the VITAP directory. There should be 3 folders; ignore the MacOSX folder, as I compressed it on my own Mac.
-
-NOTE: The [VITAP MSLv40 database](https://drive.google.com/drive/folders/1J1LFsXAw1peIOl0YsdIctD7054S-Nh8E?usp=share_link) to be compatible with ICTV VMR_MSLv40 has been updated and verified. You should be able to use it directly, but please ensure that the correct version of Diamond (v0.9.19) is installed. Additional environment details are provided in the `vitap_environment.yaml` file for your reference.
+#### Outdated version, not recommended for traditional use! ####
+The pre-built database (a hybrid database integrated VMR-MSL37, NCBI RefSeq209, and IMG/VR v.4) can be retrived from [Figshare repository](https://doi.org/10.6084/m9.figshare.25426159.v3). The database is compressed in *.zip* format, with the compressed package being approximately 0.62 GB and about 2.1 GB after decompression (sha256: `13ac7e4790cfdad2a7f0d6c3ebc8a66badfab98138693bb86f7b2a71a91cb951`). You need to place all the folders generated from decompressing the database into the VITAP directory. There should be 3 folders; ignore the MacOSX folder, as I compressed it on my own Mac.
 
 ## Usage
 ### Preparation of database utilized by VITAP
@@ -68,11 +82,13 @@ cd VITAP
 ### The result generated by VITAP
 #### 1. The 3 open reading frames related files: *merge_genome.fasta*, *merge_genome.faa*, *merge_genome.gff*
 #### 2. The length information of genomes (*merged_genome_length.tsv*).
-#### 2. A alignment file generated by DIAMOND against viral reference protein sets (*target_ICTV_blastp.align*);
-#### 3. The 8 bipartite network files describe the quantified relationship between genomes and taxonomic hierarchies (from Realm to Species)(*Genus_bipartite.graph*);
-#### 4. A reference genome file in FASTA format (*ICTV_selected_genomes.fasta*). The VITAP will ramdomly select several reference genomes and add to your genome file. These reference genomes will be performed taxonomic assignments together with yours;
-#### 5. The 2 taxonomic assignment results: *all_lineages.tsv* includes all possible taxonomic lineages; *best_determined_lineages.tsv* includes best-fit taxonomic lineage of a genome;
-#### 6. A log file (*VITAP_run.log*).
+#### 3. A alignment file generated by DIAMOND against viral reference protein sets (*target_ICTV_blastp.align*);
+#### 4. The 8 bipartite network files describe the quantified relationship between genomes and taxonomic hierarchies (from Realm to Species)(*Genus_bipartite.graph*);
+#### 5. A reference genome file in FASTA format (*ICTV_selected_genomes.fasta*). The VITAP will ramdomly select several reference genomes and add to your genome file. These reference genomes will be performed taxonomic assignments together with yours;
+#### 6. A alignment file generated by DIAMOND against UniRef90 protein sets (*target_uniref90.align*);
+#### 7. A UniRef90-based fallback file used to refine and supplement the assignment results;
+#### 8. The 2 taxonomic assignment results: *all_lineages.tsv* includes all possible taxonomic lineages; *best_determined_lineages.tsv* includes best-fit taxonomic lineage of a genome;
+#### 9. A log file (*VITAP_run.log*).
 ## Citation
 If VITAP contributes to your work, I am grateful if you can cite the [Zheng, K. et al. VITAP: a high precision tool for DNA and RNA viral classification based on meta-omic data. Nat Commun 16, 2226 (2025)](https://www.nature.com/articles/s41467-025-57500-7).
 
