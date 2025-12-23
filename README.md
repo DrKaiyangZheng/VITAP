@@ -27,7 +27,7 @@ The VITAP is compiled with Python3 and tested on Mac OSX and Linux CentOS, and c
 conda install -n base -c conda-forge mamba -y
 git clone https://github.com/DrKaiyangZheng/VITAP.git
 conda install -n base -c conda-forge mamba -y
-mamba create -n vitap_v1.10 -c conda-forge -c bioconda \
+mamba create -n vitap_v.1.10 -c conda-forge -c bioconda \
   python>=3.9,<3.12 \
   diamond=2.1.16 \
   entrez-direct=16.2 \
