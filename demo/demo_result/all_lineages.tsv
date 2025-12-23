@@ -1,0 +1,573 @@
+Genome_ID	lineage	lineage_score/participation_index
+KY853667	Xylivirus Xf109;Xylivirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.3263553471455582
+KY853667	-;Xylivirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.3253951223333285
+KY853667	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.3679466646519687
+EU916176	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.039588806896739
+EU916176	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9395171837019852
+EU916176	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3678056158076589e-05
+OP880253	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8071203769961091
+OP880253	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.852292022276664e-05
+BK013469	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.6076197612951968
+BK013469	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.5798207962425822
+KU159360	Bovine rhinitis B virus;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.614842680668856
+KU159360	-;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.879080747474949
+KU159360	-;-;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	4.198666785668368
+M16020	Cardiovirus B;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.094475363314486
+M16020	-;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.589719176056219
+M16020	-;-;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	6.111679878770741
+MT078988	Agtrevirus AG3;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9740756470909568
+MT078988	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9907957651642043
+MT078988	Agtrevirus EM4;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9665634467863287
+MT078988	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.3002058458526915
+MT078988	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0002099201147141011
+MT078988	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.455384854838239
+FR667955	Teseptimavirus N30;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8267987377432537
+FR667955	Teseptimavirus NCA;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8121883125840859
+FR667955	Teseptimavirus T7;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8325591753810695
+MT774377	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.6348336910278736
+MT774377	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.8178162683234302
+MT774377	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.4179893232584155
+MT774377	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.00011954881056417177
+JN258408	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8645804203368401
+JN258408	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.2129385926007097
+JN258408	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.6327029147486662
+JN258408	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.5049247342219857e-07
+J02448	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	2.4588443099437116
+J02448	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	2.8003504208752137
+KT728930	-;Affertcholeramvirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.6892951467753672
+KT728930	Affertcholeramvirus CTXphi;Affertcholeramvirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.5947552053703404
+KT728930	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.691143130005792
+BK013480	-;Weheuvirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.224607730078317
+BK013480	-;-;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.2489548626575742
+BK013480	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.2041324896809518
+MN966732	Thalassavirus athena;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9100867780829396
+MN966732	Thalassavirus bennett;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8981917371979962
+MN966732	Thalassavirus AG74;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8961336425523272
+MN966732	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.262540038726854
+MN966732	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	9.433157301555389e-05
+BK014192	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.5589742143131209
+BK014192	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.540922501910833
+BK013407	-;Pujohnavirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7766468978491429
+BK013407	-;-;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7894059996000232
+BK013407	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7608533561010877
+FJ904927	Fibrovirus fs1;Fibrovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.5667035430773133
+FJ904927	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.4269323120127735
+BK013891	-;Weheuvirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.887496080026297
+BK013891	-;-;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.9006696189288012
+BK013891	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.8655434918286257
+KC292020	Haloferacalesvirus HJTV2;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6271235476019799
+KC292020	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.751443269076176
+KC292020	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.809840266856755
+KC292020	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	9.440758497748136e-05
+DQ079876	Alphatrevirus ID32;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6187571742628872
+DQ079876	Alphatrevirus ID21;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6303233651514084
+DQ079876	Alphatrevirus alpha3;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6461415847022247
+DQ079876	-;-;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.702880683409546
+MF172923	Cardiovirus B;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	4.875853884743498
+MF172923	-;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.367531867150532
+MF172923	-;-;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.869921611598699
+BK013780	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.6158252397220519
+BK013780	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.5872469887384203
+KU168861	Bovine rhinitis B virus;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.5506551239795554
+KU168861	-;Aphthovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.8114958889857684
+KU168861	-;-;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	4.125824739519725
+AB043679	Versovirus VfO3K6;Versovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.579535425722912
+AB043679	-;Versovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.6593114444424206
+AB043679	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.6317389183511135
+DQ079869	Gequatrovirus ID52;Gequatrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.5376611197831265
+DQ079869	-;Gequatrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.659587356987117
+DQ079869	-;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.62350437958738
+EU304328	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.6074344314638607
+EU304328	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.749389162156864
+EU304328	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	8.82097534179221e-05
+BK013889	-;Pujohnavirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7809685293993992
+BK013889	-;-;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7948850702967096
+BK013889	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.7700279986989217
+U41758	-;Chlamydiamicrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6742438798984836
+U41758	Chlamydiamicrovirus Chp2;Chlamydiamicrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.5524707930024655
+MG748547	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9895059470397713
+MG748547	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9826095479440329
+MG748547	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9860019697526028
+MG748547	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.0711584651198196
+MG748547	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.00022851607476680002
+MG748547	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.463929569291493
+EU916176|_sliding:34001-35000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7984982074156042
+EU916176|_sliding:36001-37000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.352778046892198
+EU916176|_sliding:49001-50000	Ectocarpus siliculosus virus 1;Phaeovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.7935151922830816
+EU916176|_sliding:104001-105000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2757671207445007
+EU916176|_sliding:104001-105000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3841741262647407
+EU916176|_sliding:133001-134000	Ectocarpus siliculosus virus 1;Phaeovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.9988663090668055
+OP880253|_sliding:33001-34000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5459267963146766
+OP880253|_sliding:72001-73000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9702916722033832
+OP880253|_sliding:72001-73000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.2602190714973802
+BK013469|_sliding:1001-2000	-;Dugnivirus;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.3555866919090623
+BK013469|_sliding:1001-2000	-;-;Atkinsviridae;Norzivirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	0.3718957388896309
+MT078988|_sliding:1001-2000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	5.318500405699926
+MT078988|_sliding:7001-8000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8406920729361751
+MT078988|_sliding:10001-11000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.3929125255472954
+MT078988|_sliding:10001-11000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.3227629178472853
+MT078988|_sliding:10001-11000	Agtrevirus EM4;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.3428375662585763
+MT078988|_sliding:10001-11000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.188402333843168
+MT078988|_sliding:10001-11000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.187435009213636
+MT078988|_sliding:10001-11000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.184046486548332
+MT078988|_sliding:15001-16000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.451556366383761
+MT078988|_sliding:15001-16000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5604403631270352
+MT078988|_sliding:15001-16000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6686364397032671
+MT078988|_sliding:20001-21000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.689406281092586
+MT078988|_sliding:20001-21000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.813445053195244
+MT078988|_sliding:20001-21000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9356817350307083
+MT078988|_sliding:52001-53000	Agtrevirus EM4;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.7943640869471118
+MT078988|_sliding:52001-53000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.7878073995387843
+MT078988|_sliding:52001-53000	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.014333537932719588
+MT078988|_sliding:52001-53000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.7821848616107187
+MT078988|_sliding:58001-59000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.987855450935627
+MT078988|_sliding:58001-59000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.9233905771080404
+MT078988|_sliding:58001-59000	Agtrevirus EM4;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.9344439156442736
+MT078988|_sliding:58001-59000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.8056573522788626
+MT078988|_sliding:58001-59000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.804799729409176
+MT078988|_sliding:58001-59000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.79609385812445
+MT078988|_sliding:58001-59000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.6502416271263347
+MT078988|_sliding:87001-88000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8586373417063857
+MT078988|_sliding:110001-111000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7629937119672587
+MT078988|_sliding:110001-111000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.891313147008103
+MT078988|_sliding:110001-111000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8287975804882797
+MT078988|_sliding:127001-128000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.8137779951728303
+MT078988|_sliding:127001-128000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.746546003425251
+MT078988|_sliding:127001-128000	Agtrevirus EM4;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.7596714478077105
+MT078988|_sliding:127001-128000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.5303873404165453
+MT078988|_sliding:127001-128000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.5299012934845404
+MT078988|_sliding:127001-128000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.8015713389625376
+MT078988|_sliding:146001-147000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3211473151050914
+MT078988|_sliding:146001-147000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3957302348956144
+MT078988|_sliding:146001-147000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4778585366492225
+MT078988|_sliding:150001-151000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8687352958558449
+MT078988|_sliding:150001-151000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8994518859215614
+MT774377|_sliding:55001-56000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.2959370050351313
+MT774377|_sliding:55001-56000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.444399041967673
+MT774377|_sliding:61001-62000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.201335392906854
+MT774377|_sliding:61001-62000	Jahgtovirus intestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.1355212203806873
+MT774377|_sliding:64001-65000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.5127279893979173
+MT774377|_sliding:64001-65000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.6744601282705127
+MT774377|_sliding:70001-71000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9076785398748424
+MT774377|_sliding:71001-72000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.883897334822039
+MT774377|_sliding:71001-72000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.0847043327073926
+MT774377|_sliding:71001-72000	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.021823134329996493
+MT774377|_sliding:75001-76000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.36867357616590957
+MT774377|_sliding:75001-76000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.013699560640838387
+MT774377|_sliding:80001-81000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.2562393257425524
+MT774377|_sliding:80001-81000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3386679459246493
+MT774377|_sliding:84001-85000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4093108412243525
+MT774377|_sliding:84001-85000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5089131497887505
+JN258408|_sliding:15001-16000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9159188113368548
+JN258408|_sliding:31001-32000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.5187108105875691
+JN258408|_sliding:61001-62000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2770315909301952
+JN258408|_sliding:91001-92000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.905864682093675
+JN258408|_sliding:100001-101000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9176053333418857
+JN258408|_sliding:100001-101000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.3067686277500425
+JN258408|_sliding:135001-136000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.863200329481213
+JN258408|_sliding:145001-146000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4283573070019102
+JN258408|_sliding:147001-148000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.3816570576358735
+JN258408|_sliding:147001-148000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.789754200211055
+JN258408|_sliding:160001-161000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.150055759964824
+JN258408|_sliding:160001-161000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.745480570659719
+JN258408|_sliding:163001-164000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.175304472896322
+JN258408|_sliding:184001-185000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.1752810552208137
+JN258408|_sliding:184001-185000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.453305932024439
+JN258408|_sliding:211001-212000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.1625849253357274
+JN258408|_sliding:211001-212000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.386318751006533
+JN258408|_sliding:243001-244000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.364229986286325
+JN258408|_sliding:243001-244000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.081015503462936
+JN258408|_sliding:261001-262000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	10.089418156132538
+JN258408|_sliding:331001-332000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.75646758018368
+JN258408|_sliding:331001-332000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.273839430830216
+JN258408|_sliding:358001-359000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.4916448496831127
+JN258408|_sliding:358001-359000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.7593565068393833
+JN258408|_sliding:396001-397000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.461428535141333
+JN258408|_sliding:396001-397000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.703026012592938
+JN258408|_sliding:396001-397000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0436093454177935
+JN258408|_sliding:466001-467000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9856860645441543
+JN258408|_sliding:486001-487000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.083726334136253
+JN258408|_sliding:486001-487000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.7409775777163357
+JN258408|_sliding:628001-629000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.2406689375893567
+JN258408|_sliding:628001-629000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.656206281820655
+JN258408|_sliding:686001-687000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8235804401669675
+JN258408|_sliding:686001-687000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.3400995989904847
+JN258408|_sliding:723001-724000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.264114135564484
+JN258408|_sliding:723001-724000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.7701570046065407
+JN258408|_sliding:723001-724000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.07378586403935765
+JN258408|_sliding:728001-729000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9092956471533884
+JN258408|_sliding:728001-729000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9987271644133492
+JN258408|_sliding:746001-747000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7235004913938998
+JN258408|_sliding:746001-747000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.930999725708494
+JN258408|_sliding:800001-801000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.470675011669077
+JN258408|_sliding:800001-801000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.03547328508771
+JN258408|_sliding:800001-801000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.625377545512492
+JN258408|_sliding:809001-810000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.762935265441634
+JN258408|_sliding:809001-810000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.4439500608332025
+JN258408|_sliding:809001-810000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.672350967774348
+JN258408|_sliding:816001-817000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.013701674875382
+JN258408|_sliding:816001-817000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.954759562318504
+JN258408|_sliding:816001-817000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.455682312245781
+JN258408|_sliding:834001-835000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.619282281116007
+JN258408|_sliding:834001-835000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.295366856445018
+JN258408|_sliding:837001-838000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2349601008225974
+JN258408|_sliding:837001-838000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.404016605919934
+JN258408|_sliding:840001-841000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2311714785826573
+JN258408|_sliding:840001-841000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3540765481495234
+JN258408|_sliding:885001-886000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8604055993059354
+JN258408|_sliding:885001-886000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5941837673269015
+JN258408|_sliding:915001-916000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.9803112406728545
+JN258408|_sliding:917001-918000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.870863540733089
+JN258408|_sliding:917001-918000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.574795680191889
+JN258408|_sliding:937001-938000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4198326909881909
+JN258408|_sliding:937001-938000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5269538996002738
+JN258408|_sliding:950001-951000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0346436747982288
+JN258408|_sliding:970001-971000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1272918077888372
+JN258408|_sliding:970001-971000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.226485399054788
+JN258408|_sliding:980001-981000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.027927661397576
+JN258408|_sliding:1005001-1006000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.26993494750414
+JN258408|_sliding:1005001-1006000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.713702694089555
+JN258408|_sliding:1032001-1033000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.1344636762630502
+JN258408|_sliding:1032001-1033000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.585985253721754
+JN258408|_sliding:1038001-1039000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.034725962143395
+JN258408|_sliding:1045001-1046000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0100107789771644
+JN258408|_sliding:1045001-1046000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.3867609040542055
+JN258408|_sliding:1046001-1047000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7306912450687522
+JN258408|_sliding:1046001-1047000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0167102244350272
+JN258408|_sliding:1053001-1054000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.907242529923662
+JN258408|_sliding:1053001-1054000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.1065874349586826
+JN258408|_sliding:1063001-1064000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9942816564774971
+JN258408|_sliding:1100001-1101000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.9863208769943026
+JN258408|_sliding:1100001-1101000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.6543817013741675
+JN258408|_sliding:1103001-1104000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1187647186461724
+JN258408|_sliding:1143001-1144000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.097899211127259
+JN258408|_sliding:1179001-1180000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.3666833800516986
+JN258408|_sliding:1179001-1180000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5603276519555058
+JN258408|_sliding:1186001-1187000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9640523080619812
+JN258408|_sliding:1218001-1219000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0769424952372015
+JN258408|_sliding:1218001-1219000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2879578255185333
+J02448|_sliding:2001-3000	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.6407780554750728
+J02448|_sliding:5001-6000	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.7628824689057758
+MN966732|_sliding:16001-17000	Thalassavirus AG74;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.858684633450865
+MN966732|_sliding:16001-17000	Thalassavirus athena;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8207048528814727
+MN966732|_sliding:16001-17000	Thalassavirus bennett;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8222161134732024
+MN966732|_sliding:27001-28000	Thalassavirus AG74;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.11702441694868
+MN966732|_sliding:27001-28000	Thalassavirus athena;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.034406063045211
+MN966732|_sliding:27001-28000	Thalassavirus bennett;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.037761698394758
+MN966732|_sliding:57001-58000	-;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.7748693749890673
+BK013891|_sliding:3001-4000	-;Weheuvirus;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.0876056882760494
+BK013891|_sliding:3001-4000	-;-;Steitzviridae;Timlovirales;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.133724845834141
+BK013891|_sliding:3001-4000	-;-;-;-;Leviviricetes;Lenarviricota;Orthornavirae;Riboviria	1.122897705892482
+KC292020|_sliding:24001-25000	Haloferacalesvirus HRTV5;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.830186504305897
+KC292020|_sliding:24001-25000	Haloferacalesvirus HJTV2;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.7445640321166302
+KC292020|_sliding:24001-25000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	3.7134558630658088
+KC292020|_sliding:38001-39000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.07223878813129446
+KC292020|_sliding:44001-45000	Haloferacalesvirus HJTV2;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.247105691065797
+KC292020|_sliding:44001-45000	Haloferacalesvirus HRTV5;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.113957904776001
+KC292020|_sliding:44001-45000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.093395866458366
+AB043679|_sliding:1-1000	-;Versovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.1439888619185505
+AB043679|_sliding:1-1000	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.1920034943377418
+EU304328|_sliding:64001-65000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1029247341547364
+EU304328|_sliding:64001-65000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1568299497555599
+EU304328|_sliding:154001-155000	Micromonas pusilla virus SP1;Prasinovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1347232480490979
+EU304328|_sliding:160001-161000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2916588615641553
+EU304328|_sliding:160001-161000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.035672498897117315
+EU304328|_sliding:171001-172000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.4596082025119066
+EU304328|_sliding:171001-172000	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.204504921284224
+EU304328|_sliding:171001-172000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.786719499116082
+EU304328|_sliding:171001-172000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.2666615786030344
+EU304328|_sliding:182001-183000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.25034961080878293
+MG748547|_sliding:20001-21000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3929629865059037
+MG748547|_sliding:20001-21000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3032071302194765
+MG748547|_sliding:20001-21000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4856822361435522
+MG748547|_sliding:27001-28000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.662431600143917
+MG748547|_sliding:27001-28000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5523963199465358
+MG748547|_sliding:27001-28000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7772381424742096
+MG748547|_sliding:44001-45000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.414391952060029
+MG748547|_sliding:44001-45000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5155037472434016
+MG748547|_sliding:44001-45000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.628147178877729
+MG748547|_sliding:44001-45000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.4346206624902053
+MG748547|_sliding:44001-45000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8339081739953023
+MG748547|_sliding:110001-111000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.880689050679847
+MG748547|_sliding:110001-111000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.838327071208457
+MG748547|_sliding:110001-111000	Agtrevirus AG3;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7846408437327614
+MG748547|_sliding:110001-111000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.0131523510877884
+MG748547|_sliding:110001-111000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9530423978738973
+MG748547|_sliding:112001-113000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7077741586153437
+MG748547|_sliding:112001-113000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6613643878001534
+MG748547|_sliding:112001-113000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6589046613803677
+MG748547|_sliding:112001-113000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8954143026682833
+MG748547|_sliding:128001-129000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.6851250809142386
+MG748547|_sliding:128001-129000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.2080075157797796
+MG748547|_sliding:148001-149000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.7094595924975124
+MG748547|_sliding:148001-149000	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.05906410322630541
+MG748547|_sliding:148001-149000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.6725923647274249
+MG748547|_sliding:153001-154000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.2263933817137218
+MG748547|_sliding:153001-154000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3068268996263261
+MG748547|_sliding:153001-154000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.39294677710237
+KY853667|_sliding:1-5000	Xylivirus Xf109;Xylivirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.2307748656540978
+KY853667|_sliding:1-5000	Xylivirus XacF13;Xylivirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	1.1908561586701454
+EU916176|_sliding:40001-45000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.4510374781690844
+OP880253|_sliding:45001-50000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6273743896113846
+OP880253|_sliding:50001-55000	Kukulkanvirus guaymasense;Kukulkanvirus;Ekchuahviridae;Nakonvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.093557232236686
+M16020|_sliding:1-5000	Cardiovirus B;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	2.702042501039501
+M16020|_sliding:1-5000	-;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	2.954957421198766
+M16020|_sliding:1-5000	-;-;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	3.222934537316877
+MT078988|_sliding:5001-10000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.9076804481869271
+MT078988|_sliding:70001-75000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5714491377404616
+MT078988|_sliding:70001-75000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.6711531542259177
+MT078988|_sliding:70001-75000	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	8.150725631832765e-05
+MT078988|_sliding:85001-90000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4956409756712412
+MT078988|_sliding:85001-90000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.595870527277717
+MT078988|_sliding:85001-90000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.691454533716845
+MT774377|_sliding:15001-20000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.865876942268388
+MT774377|_sliding:15001-20000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.99697131144549
+JN258408|_sliding:65001-70000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.9973999695149267
+JN258408|_sliding:65001-70000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.6301215334328893
+JN258408|_sliding:65001-70000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.8781706508397606
+JN258408|_sliding:80001-85000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.260492219672537
+JN258408|_sliding:80001-85000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.930655643385728
+JN258408|_sliding:130001-135000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2777164063441904
+JN258408|_sliding:185001-190000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0637855153315203
+JN258408|_sliding:210001-215000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.5214660952238273
+JN258408|_sliding:210001-215000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.704530692954558
+JN258408|_sliding:235001-240000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	8.62684888776688
+JN258408|_sliding:235001-240000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	10.112063687275702
+JN258408|_sliding:290001-295000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.388005201631327
+JN258408|_sliding:290001-295000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.68353016764685
+JN258408|_sliding:300001-305000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.867041981798146
+JN258408|_sliding:300001-305000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.484629303494637
+JN258408|_sliding:300001-305000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.008906911992365
+JN258408|_sliding:470001-475000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.124115478885814
+JN258408|_sliding:470001-475000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.865962818828552
+JN258408|_sliding:470001-475000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.949909906957406
+JN258408|_sliding:480001-485000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	9.141897051878123
+JN258408|_sliding:480001-485000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	8.273383507839998
+JN258408|_sliding:480001-485000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	10.629060115628013
+JN258408|_sliding:560001-565000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.423448446844034
+JN258408|_sliding:560001-565000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.041990645787707
+JN258408|_sliding:560001-565000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.213670837209772
+JN258408|_sliding:570001-575000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.040271368916474
+JN258408|_sliding:570001-575000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.624903027992348
+JN258408|_sliding:570001-575000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.910415738011852
+JN258408|_sliding:675001-680000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.097819138125215
+JN258408|_sliding:675001-680000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.951769773073097
+JN258408|_sliding:675001-680000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.070829273549566
+JN258408|_sliding:715001-720000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.600471995655543
+JN258408|_sliding:715001-720000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.997698035025259
+JN258408|_sliding:715001-720000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.940596572945241
+JN258408|_sliding:720001-725000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.6385734764947335
+JN258408|_sliding:720001-725000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.3875237909705485
+JN258408|_sliding:720001-725000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.268277696823391
+JN258408|_sliding:720001-725000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.002254910245981547
+JN258408|_sliding:745001-750000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.81798457859275
+JN258408|_sliding:745001-750000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.741565655262985
+JN258408|_sliding:815001-820000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.248388818734302
+JN258408|_sliding:815001-820000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.951579329584365
+JN258408|_sliding:815001-820000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.0192482782477885
+JN258408|_sliding:825001-830000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.080233095297927
+JN258408|_sliding:825001-830000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.936134273710586
+JN258408|_sliding:845001-850000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.654480219848953
+JN258408|_sliding:845001-850000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.2800490875391795
+JN258408|_sliding:860001-865000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.3951323581071495
+JN258408|_sliding:860001-865000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.2287779957974125
+JN258408|_sliding:880001-885000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.6102622985945696
+JN258408|_sliding:880001-885000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.0775193580754325
+JN258408|_sliding:885001-890000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.6823579713437906
+JN258408|_sliding:885001-890000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4804804863883954
+JN258408|_sliding:895001-900000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.736235778255143
+JN258408|_sliding:895001-900000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.027834164384827
+JN258408|_sliding:910001-915000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5306798725249022
+JN258408|_sliding:910001-915000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7462870778105433
+JN258408|_sliding:960001-965000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0793296592256578
+JN258408|_sliding:1030001-1035000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.1293510463932948
+JN258408|_sliding:1030001-1035000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.129700963734762
+JN258408|_sliding:1070001-1075000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.052904687240368
+JN258408|_sliding:1070001-1075000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7539524101270154
+JN258408|_sliding:1100001-1105000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.6713497879493469
+JN258408|_sliding:1100001-1105000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9493028505535406
+JN258408|_sliding:1245001-1250000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.4382933874034701
+J02448|_sliding:1-5000	Inovirus M13;Inovirus;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	2.3552418036485436
+J02448|_sliding:1-5000	-;-;Inoviridae;Tubulavirales;Faserviricetes;Hofneiviricota;Loebvirae;Monodnaviria	2.682644542441644
+MN966732|_sliding:95001-100000	Thalassavirus AG74;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.2685080050111743
+MN966732|_sliding:95001-100000	-;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.3579051908898536
+MN966732|_sliding:110001-115000	-;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.0645162516351818
+MN966732|_sliding:120001-125000	-;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8169931410549818
+KC292020|_sliding:40001-45000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.779449213488537
+KC292020|_sliding:40001-45000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.632729113856834
+KC292020|_sliding:40001-45000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8893914631523656
+KC292020|_sliding:40001-45000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0002162998309663398
+KC292020|_sliding:50001-55000	Haloferacalesvirus HJTV2;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.831972214467798
+KC292020|_sliding:50001-55000	Haloferacalesvirus HRTV5;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8110429170256321
+KC292020|_sliding:50001-55000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9803384213326343
+EU304328|_sliding:1-5000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.502621886781711
+EU304328|_sliding:50001-55000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.378971812504377
+EU304328|_sliding:50001-55000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.5545157991078717
+EU304328|_sliding:70001-75000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0715071362272792
+EU304328|_sliding:70001-75000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.3164253541091693
+EU304328|_sliding:100001-105000	Micromonas pusilla virus SP1;Prasinovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5128317076014204
+EU304328|_sliding:100001-105000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9281253714029374
+EU304328|_sliding:100001-105000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8078472206889433
+EU916176|_sliding:1-10000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2039639569386167
+EU916176|_sliding:50001-60000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.5001140983631267
+EU916176|_sliding:50001-60000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.682109507457822
+EU916176|_sliding:100001-110000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4324497593177121
+EU916176|_sliding:100001-110000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.448699456664164
+OP880253|_sliding:1-10000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8029363418668108
+OP880253|_sliding:1-10000	-;Chlorovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0002712739479277863
+OP880253|_sliding:1-10000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.00028187014494516685
+MT078988|_sliding:30001-40000	Agtrevirus MK13;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5924962311645938
+MT078988|_sliding:30001-40000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8428102796146988
+MT078988|_sliding:30001-40000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.71690059799597
+MT078988|_sliding:30001-40000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0015350319321276802
+FR667955|_sliding:10001-20000	-;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5159905901575832
+FR667955|_sliding:10001-20000	Teseptimavirus T7;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4044419011730827
+FR667955|_sliding:20001-30000	Teseptimavirus NCA;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.042995651515858
+FR667955|_sliding:20001-30000	Teseptimavirus T7;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.049397864291141
+FR667955|_sliding:20001-30000	Teseptimavirus N30;Teseptimavirus;Autographiviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	4.038411186576665
+MT774377|_sliding:1-10000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.2224003900036786
+MT774377|_sliding:1-10000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.306933884882012
+MT774377|_sliding:10001-20000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.882129090398521
+MT774377|_sliding:10001-20000	Jahgtovirus intestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.7852294439488596
+MT774377|_sliding:40001-50000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	5.8489387534382775
+MT774377|_sliding:40001-50000	Jahgtovirus intestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	5.487042849241603
+MT774377|_sliding:80001-90000	Jahgtovirus gastrointestinalis;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9450769878015957
+MT774377|_sliding:80001-90000	-;Jahgtovirus;Intestiviridae;Crassvirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.0854226360548163
+MT774377|_sliding:80001-90000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0007572463185023143
+JN258408|_sliding:10001-20000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.237471119814956
+JN258408|_sliding:90001-100000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0470141638521122
+JN258408|_sliding:140001-150000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2119844091951297
+JN258408|_sliding:140001-150000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.439294331131026
+JN258408|_sliding:170001-180000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.4499489331831112
+JN258408|_sliding:170001-180000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.6847096337975722
+JN258408|_sliding:170001-180000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.0025213087112466
+JN258408|_sliding:190001-200000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.7838135477819286
+JN258408|_sliding:190001-200000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.3134380343592564
+JN258408|_sliding:190001-200000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.304520581998105
+JN258408|_sliding:250001-260000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.824191683619549
+JN258408|_sliding:250001-260000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.309217004718074
+JN258408|_sliding:250001-260000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.0002526189537253369
+JN258408|_sliding:330001-340000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8255139051559088
+JN258408|_sliding:330001-340000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.175879851801153
+JN258408|_sliding:380001-390000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.868691639560825
+JN258408|_sliding:380001-390000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.535993080461475
+JN258408|_sliding:380001-390000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.442739609834354
+JN258408|_sliding:410001-420000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.853659241408444
+JN258408|_sliding:410001-420000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.745886634165864
+JN258408|_sliding:440001-450000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	10.426077056129216
+JN258408|_sliding:440001-450000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	9.492882271923664
+JN258408|_sliding:440001-450000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	12.296189011587686
+JN258408|_sliding:530001-540000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.440816799024369
+JN258408|_sliding:530001-540000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.013331668072551
+JN258408|_sliding:530001-540000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.4203279740120145
+JN258408|_sliding:570001-580000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.538441285909629
+JN258408|_sliding:570001-580000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.988920684826726
+JN258408|_sliding:570001-580000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.750859293917432
+JN258408|_sliding:570001-580000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	9.195305436771541
+JN258408|_sliding:610001-620000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.939273627219124
+JN258408|_sliding:610001-620000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.321653653590325
+JN258408|_sliding:610001-620000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	8.156950029099235
+JN258408|_sliding:620001-630000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.708857888743192
+JN258408|_sliding:620001-630000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.302558143874436
+JN258408|_sliding:620001-630000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.7901840619623135
+JN258408|_sliding:620001-630000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	8.143948785831078
+JN258408|_sliding:640001-650000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.762573819985926
+JN258408|_sliding:640001-650000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.127085398284534
+JN258408|_sliding:640001-650000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	7.947828643696956
+JN258408|_sliding:640001-650000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	9.445499341209825
+JN258408|_sliding:690001-700000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.8491174987289885
+JN258408|_sliding:690001-700000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.701947481630801
+JN258408|_sliding:720001-730000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7835387226917516
+JN258408|_sliding:720001-730000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.025666642540997
+JN258408|_sliding:720001-730000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.409937578719599
+JN258408|_sliding:720001-730000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.0003428192152403075
+JN258408|_sliding:740001-750000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.1496462935020846
+JN258408|_sliding:740001-750000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.640892411785336
+JN258408|_sliding:740001-750000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	4.361042234054361
+JN258408|_sliding:820001-830000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	5.676343488005453
+JN258408|_sliding:820001-830000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	6.597006384754516
+JN258408|_sliding:910001-920000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7980559173674229
+JN258408|_sliding:910001-920000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.061482020873926
+JN258408|_sliding:930001-940000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.624524979791302
+JN258408|_sliding:930001-940000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.991037621890522
+JN258408|_sliding:980001-990000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.317809390855298
+JN258408|_sliding:1030001-1040000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.78705367402371
+JN258408|_sliding:1070001-1080000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.2115920920621415
+JN258408|_sliding:1070001-1080000	Cotonvirus japonicum;Cotonvirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.8941175906579604
+JN258408|_sliding:1140001-1150000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.1526562489992966
+JN258408|_sliding:1140001-1150000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7889885711815419
+JN258408|_sliding:1140001-1150000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.558912626224081
+JN258408|_sliding:1160001-1170000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.580176524666298
+JN258408|_sliding:1170001-1180000	Megavirus baoshanense;Megavirus;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.1226166245676437
+JN258408|_sliding:1170001-1180000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.2795437062315163
+JN258408|_sliding:1190001-1200000	-;-;Mimiviridae;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.6753592366197934
+MN966732|_sliding:90001-100000	Thalassavirus bennett;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7482597713729997
+MN966732|_sliding:90001-100000	Thalassavirus AG74;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7718172278945366
+MN966732|_sliding:90001-100000	-;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.902524785768245
+MN966732|_sliding:110001-120000	-;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.8436098265511578
+KC292020|_sliding:10001-20000	Haloferacalesvirus HJTV2;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.717759276115125
+KC292020|_sliding:10001-20000	Haloferacalesvirus HRTV5;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.7145637882156763
+KC292020|_sliding:10001-20000	Haloferacalesvirus HF1;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.6833926249257596
+KC292020|_sliding:50001-60000	Haloferacalesvirus HJTV2;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.489805462684381
+KC292020|_sliding:50001-60000	-;Haloferacalesvirus;Hafunaviridae;Thumleimavirales;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5959314686283237
+EU304328|_sliding:1-10000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9821592084258777
+EU304328|_sliding:1-10000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.9943162795271008
+EU304328|_sliding:60001-70000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.9225475173343638
+EU304328|_sliding:60001-70000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.026045519862791
+EU304328|_sliding:80001-90000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.7189935046062486
+EU304328|_sliding:80001-90000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.825282345920421
+EU304328|_sliding:90001-100000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.7266663123006493
+EU304328|_sliding:90001-100000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.7655410169676461
+EU304328|_sliding:170001-180000	Micromonas pusilla virus SP1;Prasinovirus;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	2.7817024680311384
+EU304328|_sliding:170001-180000	-;-;Phycodnaviridae;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.389127948408035
+EU304328|_sliding:170001-180000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	3.6999135607168347
+EU304328|_sliding:170001-180000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	0.0030990922263525386
+MG748547|_sliding:60001-70000	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8343670748223784
+MG748547|_sliding:60001-70000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7406386225579566
+MG748547|_sliding:60001-70000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7448813574303406
+MG748547|_sliding:60001-70000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.7333284683822359
+MG748547|_sliding:80001-90000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.4694861556385503
+MG748547|_sliding:80001-90000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.695194858255162
+MG748547|_sliding:80001-90000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.5864925624181225
+MG748547|_sliding:80001-90000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.8047710914571995
+MG748547|_sliding:80001-90000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.003469069880261121
+MG748547|_sliding:110001-120000	-;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.532017238511402
+MG748547|_sliding:110001-120000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.62343018305341
+MG748547|_sliding:140001-150000	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.114197784891335
+MG748547|_sliding:140001-150000	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.1372014200317335
+MG748547|_sliding:140001-150000	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.128966516590914
+MG748547|_sliding:140001-150000	-;-;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.480244868344672
+MG748547|_sliding:140001-150000	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.6377724580241475
+MG748547|_sliding:140001-150000	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0009895922992406775
+EU376394.1	Cardiovirus D;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.192194793785994
+EU376394.1	-;Cardiovirus;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	5.701836380384128
+EU376394.1	-;-;Picornaviridae;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	6.231094850625133
+DQ079877.1	Gequatrovirus ID52;Gequatrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.562537561982377
+DQ079877.1	Gequatrovirus G4;Gequatrovirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.5758478427264873
+DQ079877.1	-;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6332954114579619
+MT074475.1	Kuttervirus ECML4;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9250596867045857
+MT074475.1	Kuttervirus dinky;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9704210151320924
+MT074475.1	Kuttervirus Det7;Kuttervirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9425139417899149
+MT074475.1	-;Agtrevirus;Ackermannviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.018199000572817
+MT074475.1	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.392329440022942
+MT074475.1	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.00021315349007728236
+MT460514.1	Thalassavirus AG74;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.955251184357671
+MT460514.1	Thalassavirus bennett;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9243727525373935
+MT460514.1	Thalassavirus athena;Thalassavirus;Demerecviridae;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	1.9397657360968732
+MT460514.1	-;-;-;-;Caudoviricetes;Uroviricota;Heunggongvirae;Duplodnaviria	2.29017718645299
+MT460514.1	-;-;-;-;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	0.0001411952861588329
+DQ079871.1	Alphatrevirus ID32;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6036184730200242
+DQ079871.1	Alphatrevirus ID21;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6402068336101236
+DQ079871.1	Alphatrevirus alpha3;Alphatrevirus;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.5937187660759335
+DQ079871.1	-;-;Microviridae;Petitvirales;Malgrandaviricetes;Phixviricota;Sangervirae;Monodnaviria	1.6642698693747597
+KU168861|_sliding:5001-6000	-;-;-;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	1.0
+AY338217	-;-;-;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0
+JN258408|_sliding:19001-20000	-;-;-;Imitervirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0
+EU916176|_sliding:128001-129000	-;-;-;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0
+KU168861|_sliding:4001-5000	-;-;-;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	1.0
+EU916176|_sliding:120001-125000	-;-;-;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0
+EU916176|_sliding:138001-139000	-;-;-;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0
+MF172923|_sliding:2001-3000	-;-;-;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	1.0
+EU304328|_sliding:25001-26000	-;-;-;Algavirales;Megaviricetes;Nucleocytoviricota;Bamfordvirae;Varidnaviria	1.0
+KU159360|_sliding:2001-3000	-;-;-;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	1.0
+JN936206	-;-;-;Picornavirales;Pisoniviricetes;Pisuviricota;Orthornavirae;Riboviria	0.5
