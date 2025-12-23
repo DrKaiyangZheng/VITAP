@@ -50,7 +50,7 @@ mamba env create -f env.yaml -n vitap_v.1.10
 ```
 ### Installation through conda/mamba (Recommanded, pending Bioconda branch merge)
 ```
-mamba create -n vitap_v.1.10 -c conda-forge vitap=1.10
+mamba create -n vitap_v.1.10 -c bioconda vitap=1.10
 ```
 ### Use the pre-built database
 #### Outdated version, not recommended for traditional use! ####
