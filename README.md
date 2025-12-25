@@ -15,9 +15,9 @@ where |P_{G,T}| denotes the number of ORFs in genome G whose UniRef90 hits are a
 
 By default, `PI` is set to 0.25, corresponding to a scenario in which 50% of the ORFs in genome G (referring to geNomad) are assigned to taxon A, and the ratio of the summed bitscore for taxon A to the maximum summed bitscore across all taxa in genome G is 0.5. This harmonization parameter helps avoid misleading taxonomic assignments arising from two scenarios: (1) a single ORF exhibiting an exceptionally high bitscore to taxon A, or (2) multiple ORFs mapping to taxon A but with generally low sequence similarity.
 
-In a study of viromes from Mariana Trench sediments (unpublished), the annotation rate increased by 11% compared with VITAP v.1.7.
-
 In addition, we replaced *pandas* with *polars* in several steps and substituted *prodigal* with *pyrodigal*, resulting in a substantial improvement in computational efficiency. Many thanks to [Valentyn](https://github.com/valentynbez).
+
+We performed taxonomic assignments on viromes from selected Tara Oceans sites. The results showed that VITAP v1.10 improved the lineage-level annotation rate by 11% compared with VITAP v1.7. Among a total of 93,145 vOTUs, the annotation rate increased from 76% in v1.7 to 87% in v1.10, while the computation time was reduced by 4.5 hours on the same hardware. 
 
 Because UniRef90 has been integrated, prebuilt databases are no longer provided.
 ## Installation
