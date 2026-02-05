@@ -24,7 +24,6 @@ Because UniRef90 has been integrated, prebuilt databases are no longer provided.
 The VITAP is compiled with Python3 and tested on Mac OSX and Linux CentOS, and can run on the above two systems.
 ### Manually deployed environment
 ```
-conda install -n base -c conda-forge mamba -y
 git clone https://github.com/DrKaiyangZheng/VITAP.git
 conda install -n base -c conda-forge mamba -y
 mamba create -n vitap_v.1.10 -c conda-forge -c bioconda \
