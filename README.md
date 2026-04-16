@@ -4,7 +4,7 @@ VITAP (Viral Taxonomic Assignment Pipeline), a high-accuracy pipeline for classi
 ## The workflow of VITAP
 ![logo](/images/workflow.png)
 The VITAP contains two main parts: the update part enables to generate the VITAP-specific database based on current viral taxonomic information from ICTV; the prediction part utilizes previously built database to perform taxonomic assignment. The VITAP utilized an algorithm to determine the best-fit taxonomic lineage, and provides result with various confidence level.
-## Undate to VITAP v.1.11
+## Undate to VITAP v.1.12
 We recognized that a major limitation of relying solely on the ICTV VMR for viral taxonomic assignments is the restricted diversity of protein collections, which negatively affects overall annotation rates and may introduce potential biases in the assignment of certain lineages. To address this issue, we incorporated the external protein database UniRef90 in this version to calibrate and supplement taxonomic assignments.
 
 In the UniRef90-based taxonomy fallback, a single sequence often corresponds to multiple open reading frames (ORFs), and these ORFs may produce BLASTp hits to the same or to different taxa. To quantify the representativeness and support of a given taxon within a genome, we defined a `Participation Index` (PI). The `PI` is used to quantify the representativeness of a taxonomic unit inferred from UniRef90 annotations. For a given genome G with a total of `|P_G|` predicted ORFs and a taxonomic unit T, the `PI` is defined as:
