@@ -831,7 +831,7 @@ def assignment(args):
     start_wall = time.time()
     start_cpu = time.process_time()
 
-    print("===== The VITAP (Viral Taxonomic Assignment Pipeline) v.1.11 =====")
+    print("===== The VITAP (Viral Taxonomic Assignment Pipeline) v.1.12 =====")
     print("[INFO] Temporary files will be generated in the result directory.")
 
     # ---- Check duplicate ID ----
