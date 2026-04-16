@@ -1,6 +1,6 @@
 package:
   name: vitap
-  version: "1.10"
+  version: "1.12"
 
 source:
   path: .
