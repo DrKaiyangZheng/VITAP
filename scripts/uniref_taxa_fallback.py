@@ -165,22 +165,7 @@ def uniref_taxa_fallback(
     out_final,
     debug_dir=None,
 ):
-    """
-    UniRef-based taxonomic semantic fallback (order → class → phylum)
 
-    Parameters
-    ----------
-    diamond_file : str
-        DIAMOND 输出 TSV（protein_id, subject_id, bitscore, taxid）
-    taxdump : str
-        NCBI taxonomy dump 目录（taxonkit 使用）
-    prodigal_faa : str
-        Prodigal 预测的 FAA 文件
-    out_final : str
-        最终输出 TSV
-    debug_dir : str or None
-        若提供，则输出所有中间 debug 文件
-    """
     DEBUG = debug_dir is not None
     if DEBUG:
         os.makedirs(debug_dir, exist_ok=True)
