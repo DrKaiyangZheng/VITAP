@@ -6,7 +6,6 @@ import math
 import argparse
 import re
 import os
-import glob
 import zipfile
 import shutil
 import subprocess
@@ -26,14 +25,50 @@ from datetime import datetime
 from collections import defaultdict
 from uniref90_accession2taxid import uniref90_accession2taxid
 
+
+ACCESSION_COLUMN = "Virus GENBANK accession"
+SEQUENCE_ID_COLUMN = "VITAP sequence ID"
+START_END_COLUMN = "Start/End site"
+FULL_LENGTH = "full_length"
+
 # =========================================================
 # Utility functions (UNMODIFIED)
 # =========================================================
 
 def clean_virus_id(virus_id):
     if ':' in virus_id:
-        virus_id = virus_id.split(':')[1].strip()
+        virus_id = virus_id.split(':', 1)[1].strip()
     return virus_id.strip()
+
+
+def normalize_reference_id(reference_id):
+    """Normalize a reference identifier for VITAP taxonomy-map lookups."""
+    reference_id = str(reference_id).strip()
+    if "__" in reference_id:
+        return reference_id
+    return reference_id.split(".", 1)[0]
+
+
+def mapping_id_column(columns):
+    """Prefer the range-aware ID while remaining compatible with older databases."""
+    if SEQUENCE_ID_COLUMN in columns:
+        return SEQUENCE_ID_COLUMN
+    if ACCESSION_COLUMN in columns:
+        return ACCESSION_COLUMN
+    raise KeyError(
+        f"ICTV mapping file requires {SEQUENCE_ID_COLUMN!r} or {ACCESSION_COLUMN!r}."
+    )
+
+
+def validate_file_identifier(identifier, field_name):
+    """Reject identifiers that are unsafe or unsuitable as FASTA filenames."""
+    identifier = str(identifier).strip()
+    if not identifier or not re.fullmatch(r"[A-Za-z0-9_.-]+", identifier):
+        raise ValueError(
+            f"Invalid {field_name}: {identifier!r}. "
+            "Only letters, numbers, underscores, dots, and hyphens are supported."
+        )
+    return identifier
 
 def fill_empty_cells(row, header):
     filled_row = [row[0]]
@@ -50,46 +85,227 @@ def fill_empty_cells(row, header):
     return filled_row
 
 def extract_start_end_sites(virus_id):
-    match = re.match(r'(\w+)\s*\((\d+)\.(\d+)\)', virus_id)
+    virus_id = virus_id.strip()
+    match = re.fullmatch(r'([^()\s]+)\s*\((\d+)\.(\d+)\)', virus_id)
     if match:
-        start_end = f"{match.group(2)}~{match.group(3)}"
+        start = int(match.group(2))
+        end = int(match.group(3))
+        if start < 1 or end < start:
+            raise ValueError(
+                f"Invalid 1-based inclusive coordinates in {virus_id!r}: "
+                f"start={start}, end={end}"
+            )
+        start_end = f"{start}~{end}"
         virus_id = match.group(1)
     else:
-        start_end = "full_length"
+        if "(" in virus_id or ")" in virus_id:
+            raise ValueError(f"Could not parse accession coordinates: {virus_id!r}")
+        start_end = FULL_LENGTH
+    validate_file_identifier(virus_id, ACCESSION_COLUMN)
     return virus_id, start_end
+
+
+def make_sequence_id(accession, start_end_sites):
+    """Create a stable, unique reference ID for a full record or coordinate slice."""
+    accession = validate_file_identifier(accession, ACCESSION_COLUMN)
+    base_accession = normalize_reference_id(accession)
+    if start_end_sites == FULL_LENGTH:
+        return base_accession
+    start, end = map(int, start_end_sites.split("~"))
+    if start < 1 or end < start:
+        raise ValueError(
+            f"Invalid 1-based inclusive coordinates: {start_end_sites!r}"
+        )
+    return f"{base_accession}__{start}_{end}"
 
 # =========================================================
 # Download genome
 # =========================================================
 
 def download_and_process_genome(
-    row,
+    virus_id,
     output_folder,
     downloaded_ids,
     progress_bar,
     counter_lock,
 ):
-    virus_id = row[0]
+    virus_id = validate_file_identifier(virus_id, ACCESSION_COLUMN)
+    try:
+        if virus_id in downloaded_ids:
+            return
 
-    if virus_id in downloaded_ids:
-        with counter_lock:
-            progress_bar.update(1)
-        return
+        output_file = os.path.join(output_folder, f"{virus_id}.fasta")
+        partial_file = f"{output_file}.part"
+        success = False
 
-    output_file = os.path.join(output_folder, f"{virus_id}.fasta")
+        for _ in range(10):
+            if os.path.exists(partial_file):
+                os.remove(partial_file)
+            with open("VITAP_VMR_update.log", "a") as log_file, open(partial_file, "w") as out:
+                result = subprocess.run(
+                    ["efetch", "-id", virus_id, "-format", "fasta", "-db", "nuccore"],
+                    stdout=out,
+                    stderr=log_file,
+                    check=False,
+                )
 
-    for _ in range(10):
-        with open("VITAP_VMR_update.log", "a") as log_file, open(output_file, "w") as out:
-            subprocess.run(
-                ["efetch", "-id", virus_id, "-format", "fasta", "-db", "nuccore"],
-                stdout=out,
-                stderr=log_file
-            )
-        if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
+            if result.returncode != 0 or not os.path.exists(partial_file):
+                continue
+            if os.path.getsize(partial_file) == 0:
+                continue
+
+            try:
+                next(SeqIO.parse(partial_file, "fasta"))
+            except (StopIteration, ValueError):
+                continue
+
+            os.replace(partial_file, output_file)
+            success = True
             break
 
-    with counter_lock:
-        progress_bar.update(1)
+        if os.path.exists(partial_file):
+            os.remove(partial_file)
+        if not success:
+            raise RuntimeError(
+                f"Failed to download a valid FASTA record for {virus_id} after 10 attempts. "
+                "See VITAP_VMR_update.log for details."
+            )
+    finally:
+        with counter_lock:
+            progress_bar.update(1)
+
+
+def load_accession_record(fasta_file, accession):
+    """Load the FASTA record matching an accession, ignoring a version suffix."""
+    records = list(SeqIO.parse(fasta_file, "fasta"))
+    if not records:
+        raise RuntimeError(f"No FASTA record found in {fasta_file}")
+
+    accession_base = normalize_reference_id(accession)
+    matches = [
+        record for record in records
+        if normalize_reference_id(record.id) == accession_base
+    ]
+    if len(matches) == 1:
+        return matches[0]
+    if len(records) == 1:
+        return records[0]
+    raise RuntimeError(
+        f"Could not uniquely match accession {accession!r} in {fasta_file}; "
+        f"found {len(records)} FASTA records."
+    )
+
+
+def write_segment_fasta(record, start, end, sequence_id, output_file):
+    """Write one 1-based inclusive interval atomically with a unique FASTA ID."""
+    sequence_id = validate_file_identifier(sequence_id, SEQUENCE_ID_COLUMN)
+    if start < 1 or end < start or end > len(record):
+        raise ValueError(
+            f"Coordinates {start}~{end} are outside record {record.id!r} "
+            f"(length {len(record)})."
+        )
+
+    expected_length = end - start + 1
+    segment = SeqRecord(
+        record.seq[start - 1:end],
+        id=sequence_id,
+        name=sequence_id,
+        description="",
+    )
+    partial_file = f"{output_file}.part"
+    try:
+        SeqIO.write([segment], partial_file, "fasta")
+        written_records = list(SeqIO.parse(partial_file, "fasta"))
+        if (
+            len(written_records) != 1
+            or written_records[0].id != sequence_id
+            or len(written_records[0]) != expected_length
+        ):
+            raise RuntimeError(
+                f"Validation failed while writing {sequence_id}: "
+                f"expected one {expected_length}-bp FASTA record."
+            )
+        os.replace(partial_file, output_file)
+    except Exception:
+        if os.path.exists(partial_file):
+            os.remove(partial_file)
+        raise
+
+
+def process_reference_sequences(
+    rows,
+    output_folder,
+    accession_index,
+    sequence_id_index,
+    coordinates_index,
+):
+    """Extract all coordinate ranges safely and return FASTA files to merge."""
+    rows_by_accession = defaultdict(list)
+    seen_sequence_ids = {}
+
+    for row in rows:
+        accession = validate_file_identifier(row[accession_index], ACCESSION_COLUMN)
+        sequence_id = validate_file_identifier(
+            row[sequence_id_index], SEQUENCE_ID_COLUMN
+        )
+        coordinates = row[coordinates_index]
+        expected_sequence_id = make_sequence_id(accession, coordinates)
+        if sequence_id != expected_sequence_id:
+            raise ValueError(
+                f"{SEQUENCE_ID_COLUMN} {sequence_id!r} does not match "
+                f"accession/range {accession!r}, {coordinates!r}; "
+                f"expected {expected_sequence_id!r}."
+            )
+        definition = (accession, coordinates)
+        previous = seen_sequence_ids.get(sequence_id)
+        if previous is not None and previous != definition:
+            raise ValueError(
+                f"Duplicate {SEQUENCE_ID_COLUMN} {sequence_id!r} represents both "
+                f"{previous} and {definition}."
+            )
+        seen_sequence_ids[sequence_id] = definition
+        rows_by_accession[accession].append(row)
+
+    for accession, accession_rows in rows_by_accession.items():
+        partial_rows = [
+            row for row in accession_rows
+            if row[coordinates_index] != FULL_LENGTH
+        ]
+        if not partial_rows:
+            continue
+
+        input_fasta = os.path.join(output_folder, f"{accession}.fasta")
+        record = load_accession_record(input_fasta, accession)
+        for row in partial_rows:
+            start, end = map(int, row[coordinates_index].split("~"))
+            sequence_id = row[sequence_id_index]
+            output_fasta = os.path.join(output_folder, f"{sequence_id}.fasta")
+            write_segment_fasta(record, start, end, sequence_id, output_fasta)
+
+        has_full_length = any(
+            row[coordinates_index] == FULL_LENGTH for row in accession_rows
+        )
+        if not has_full_length:
+            os.remove(input_fasta)
+
+    expected_files = []
+    seen_files = set()
+    for row in rows:
+        if row[coordinates_index] == FULL_LENGTH:
+            fasta_file = os.path.join(
+                output_folder, f"{row[accession_index]}.fasta"
+            )
+        else:
+            fasta_file = os.path.join(
+                output_folder, f"{row[sequence_id_index]}.fasta"
+            )
+        if fasta_file not in seen_files:
+            if not os.path.isfile(fasta_file) or os.path.getsize(fasta_file) == 0:
+                raise RuntimeError(f"Expected FASTA file is missing or empty: {fasta_file}")
+            expected_files.append(fasta_file)
+            seen_files.add(fasta_file)
+
+    return expected_files
 
 # =========================================================
 # FASTA helpers (UNMODIFIED)
@@ -273,8 +489,9 @@ def _read_diamond_align_as_polars(blast_results_file: str) -> pl.DataFrame:
 
 def _read_ictv_map_as_polars(ictv_file: str, taxon_level: str) -> pl.DataFrame:
     """
-    Robust reader for ICTV VMR csv. Only keeps:
-      "Virus GENBANK accession" and taxon_level column
+    Robust reader for ICTV VMR csv. Only keeps the preferred reference ID
+    ("VITAP sequence ID" when present, otherwise "Virus GENBANK accession")
+    and the requested taxon-level column.
     Uses Python csv module-like parsing via polars? -> We'll do pure python for max safety.
     """
     accessions = []
@@ -282,15 +499,12 @@ def _read_ictv_map_as_polars(ictv_file: str, taxon_level: str) -> pl.DataFrame:
 
     with open(ictv_file, "r", encoding="utf-8", errors="replace", newline="") as f:
         reader = csv.DictReader(f)
-        # Column names must match your file header
-        acc_key = "Virus GENBANK accession"
-        if acc_key not in reader.fieldnames:
-            raise KeyError(f"ICTV file missing column: {acc_key}")
+        acc_key = mapping_id_column(reader.fieldnames or [])
         if taxon_level not in reader.fieldnames:
             raise KeyError(f"ICTV file missing column: {taxon_level}")
 
         for row in reader:
-            acc = (row.get(acc_key) or "").strip()
+            acc = normalize_reference_id(row.get(acc_key) or "")
             tx = (row.get(taxon_level) or "").strip()
             if not acc:
                 continue
@@ -347,21 +561,30 @@ def taxon_cutoff(blast_results_file, ictv_file, taxon_level,
     ictv_data = pd.read_csv(ictv_file)
 
     # Extract genome accession from protein ID (format: {genome_id}_{orf_num}).
-    # Use rsplit("_", 1) first to handle genome IDs without a version dot (e.g. "AE006468_1"),
-    # then split(".", 1) to strip the version suffix (e.g. "U41758.1" -> "U41758").
+    # Strip only the trailing ORF number, then normalize a legacy version suffix.
     blast_results["qseqid_genome_id"] = blast_results["qseqid"].apply(
-        lambda x: x.rsplit("_", 1)[0].split(".", 1)[0]
+        lambda x: normalize_reference_id(x.rsplit("_", 1)[0])
     )
     blast_results["sseqid_genome_id"] = blast_results["sseqid"].apply(
-        lambda x: x.rsplit("_", 1)[0].split(".", 1)[0]
+        lambda x: normalize_reference_id(x.rsplit("_", 1)[0])
     )
 
-    # Normalize ICTV accessions to strip version suffixes (e.g. "U41758.1" -> "U41758")
-    # so that the join is consistent regardless of whether the VMR CSV stores versioned accessions.
-    ictv_data["Virus GENBANK accession"] = (
-        ictv_data["Virus GENBANK accession"].str.strip().str.split(".").str[0]
+    reference_key = mapping_id_column(ictv_data.columns)
+    ictv_data[reference_key] = ictv_data[reference_key].apply(normalize_reference_id)
+
+    conflicting = (
+        ictv_data.groupby(reference_key, dropna=False)[taxon_level]
+        .nunique(dropna=False)
     )
-    ictv_data.set_index("Virus GENBANK accession", inplace=True)
+    conflicting = conflicting[conflicting > 1]
+    if not conflicting.empty:
+        examples = ", ".join(map(str, conflicting.index[:5]))
+        raise ValueError(
+            f"Conflicting {taxon_level} assignments for reference IDs: {examples}"
+        )
+
+    ictv_data = ictv_data.drop_duplicates(subset=[reference_key], keep="first")
+    ictv_data.set_index(reference_key, inplace=True)
 
     blast_results = blast_results.join(
         ictv_data[taxon_level], on="qseqid_genome_id"
@@ -542,11 +765,11 @@ def upd(args):
     os.makedirs(output_folder, exist_ok=True)
     VMR_csv_file = output_file
 
-    #delete empty files first
+    # Delete empty files and interrupted temporary downloads first.
     for root, dirs, files in os.walk(output_folder):
         for name in files:
             file_path = os.path.join(root, name)
-            if os.path.getsize(file_path) == 0:
+            if name.endswith(".part") or os.path.getsize(file_path) == 0:
                 os.remove(file_path)
 
     # ===== Reformatting VMR table =====
@@ -554,21 +777,40 @@ def upd(args):
         reader = csv.reader(infile)
         writer = csv.writer(outfile)
 
-        # Writing table header
-        header = next(reader)
-        header.append('Start/End site')
-        writer.writerow(header)
+        input_header = next(reader)
+        if not input_header or input_header[0].strip() != ACCESSION_COLUMN:
+            raise ValueError(
+                f"The first input column must be {ACCESSION_COLUMN!r}."
+            )
+        reserved_columns = {SEQUENCE_ID_COLUMN, START_END_COLUMN}
+        if reserved_columns.intersection(input_header):
+            raise ValueError(
+                "The input appears to be already reformatted; please provide the original VMR CSV."
+            )
+        output_header = input_header + [SEQUENCE_ID_COLUMN, START_END_COLUMN]
+        writer.writerow(output_header)
 
         # Processing data rows
-        for row in reader:
+        for row_number, row in enumerate(reader, start=2):
+            if not row or not any(cell.strip() for cell in row):
+                continue
+            if len(row) != len(input_header):
+                raise ValueError(
+                    f"CSV row {row_number} has {len(row)} columns; "
+                    f"expected {len(input_header)}."
+                )
             virus_ids = row[0].split(";")
             for virus_id in virus_ids:
                 cleaned_id = clean_virus_id(virus_id)
                 if cleaned_id:
                     cleaned_id, start_end_sites = extract_start_end_sites(cleaned_id)
-                    new_row = [cleaned_id] + row[1:] + [start_end_sites]
-                    filled_row = fill_empty_cells(new_row, header)
-                    writer.writerow(filled_row)
+                    sequence_id = make_sequence_id(cleaned_id, start_end_sites)
+                    taxonomy_row = fill_empty_cells(
+                        [cleaned_id] + row[1:], input_header
+                    )
+                    writer.writerow(
+                        taxonomy_row + [sequence_id, start_end_sites]
+                    )
 
     # Y/N confirmation
     while True:
@@ -583,75 +825,85 @@ def upd(args):
     # ===== Load VMR rows =====
     with open(VMR_csv_file, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
-        next(reader)          # skip header
-        rows = list(reader)
+        vmr_header = next(reader)
+        rows = [row for row in reader if row and any(cell.strip() for cell in row)]
 
-    total_rows = len(rows)
+    try:
+        accession_index = vmr_header.index(ACCESSION_COLUMN)
+        sequence_id_index = vmr_header.index(SEQUENCE_ID_COLUMN)
+        coordinates_index = vmr_header.index(START_END_COLUMN)
+    except ValueError as error:
+        raise ValueError(
+            f"Reformatted VMR CSV must contain {ACCESSION_COLUMN!r}, "
+            f"{SEQUENCE_ID_COLUMN!r}, and {START_END_COLUMN!r}."
+        ) from error
+
+    malformed_rows = [
+        index + 2 for index, row in enumerate(rows)
+        if len(row) != len(vmr_header)
+    ]
+    if malformed_rows:
+        raise ValueError(
+            f"Malformed rows in reformatted VMR CSV: {malformed_rows[:10]}"
+        )
+
+    # Coordinates may have been corrected during the confirmation pause.
+    # Regenerate the derived sequence IDs and persist the synchronized table.
+    for row in rows:
+        row[sequence_id_index] = make_sequence_id(
+            row[accession_index], row[coordinates_index]
+        )
+    with open(VMR_csv_file, "w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(vmr_header)
+        writer.writerows(rows)
+
+    unique_accessions = list(dict.fromkeys(
+        validate_file_identifier(row[accession_index], ACCESSION_COLUMN)
+        for row in rows
+    ))
 
     VMR_csv_file = output_file
 
     counter_lock = Lock()
 
     downloaded_ids = {
-        f[:-6] for f in os.listdir(output_folder) if f.endswith(".fasta")
+        f[:-6] for f in os.listdir(output_folder)
+        if f.endswith(".fasta") and os.path.getsize(os.path.join(output_folder, f)) > 0
     }
 
     with ThreadPoolExecutor(max_workers=3) as executor:
-        progress_bar = tqdm(total=total_rows, desc="Downloading genomes")
+        progress_bar = tqdm(total=len(unique_accessions), desc="Downloading genomes")
         futures = [
             executor.submit(
                 download_and_process_genome,
-                row,
+                virus_id,
                 output_folder,
                 downloaded_ids,
                 progress_bar,
                 counter_lock,
             )
-            for row in rows
+            for virus_id in unique_accessions
         ]
 
-        for future in as_completed(futures):
-            future.result()
+        try:
+            for future in as_completed(futures):
+                future.result()
+        finally:
+            progress_bar.close()
 
-        progress_bar.close()
+    reference_fasta_files = process_reference_sequences(
+        rows,
+        output_folder,
+        accession_index,
+        sequence_id_index,
+        coordinates_index,
+    )
 
-    # Processing integrated viral sequences
-    for row in rows:
-        virus_id = row[0]
-        start_end_sites = row[-1]
-
-        if start_end_sites == "full_length":
-            continue
-
-        start, end = map(int, start_end_sites.split('~'))
-        start -= 1
-
-        input_fasta = os.path.join(output_folder, f"{virus_id}.fasta")
-        output_fasta = os.path.join(output_folder, f"{virus_id}_segment.fasta")
-
-        if start is not None and end is not None:
-            #os.system(f"seqkit subseq --quiet --id-regexp '^(\\S+)\.\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
-            #os.system(f"seqkit subseq --quiet --id-regexp '^(\\\\S+)\\.\\s?' --chr {virus_id} -r {start}:{end} {input_fasta} | sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}")
-            command = (
-                f"seqkit subseq --quiet --id-regexp '^(\\\\S+)\\.\\s?' --chr {virus_id} "
-                f"-r {start}:{end} {input_fasta} | "
-                f"sed 's/>.* {virus_id}/>{virus_id}/g' > {output_fasta}"
-            )
-
-            with open("VITAP_VMR_update.log", "a") as log_file:
-                subprocess.run(
-                    command,
-                    shell=True,
-                    stdout=log_file,
-                    stderr=subprocess.STDOUT
-                )
-
-            fai_path = os.path.join(output_folder, '*.fai')
-            os.remove(input_fasta)
-            for fai in glob.glob(fai_path):
-                os.remove(fai)
-
-    print("[INFO] All files successfully downloaded and processed")
+    print(
+        f"[INFO] All files successfully downloaded and processed "
+        f"({len(reference_fasta_files)} unique reference sequences)"
+    )
 
     # ===== Get current date and generate new folder name =====
     today = datetime.today().strftime('%Y%m%d')
@@ -664,7 +916,7 @@ def upd(args):
     if not Path(db_genome_file).is_file():
         print(f"[INFO] Merging file to VMR_genome_{db_name}.fasta...")
         with open(db_genome_file, "w") as db_genome:
-            for fasta_file in glob.glob(os.path.join(output_folder, "*.fasta")):
+            for fasta_file in reference_fasta_files:
                 with open(fasta_file, "r") as single_fasta:
                     db_genome.write(single_fasta.read())
             remove_invalid_lines(db_genome_file)
@@ -825,4 +1077,3 @@ def upd(args):
 
     delete_temp_files(updated_DB_folder)
     print("[INFO] All updating steps finished.")
-
