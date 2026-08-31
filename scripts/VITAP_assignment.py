@@ -23,6 +23,27 @@ from uniref_taxa_fallback import uniref_taxa_fallback
 
 TAXON_CATEGORIES = ["Species", "Genus", "Family", "Order", "Class", "Phylum", "Kingdom", "Realm"]
 TAXON_INDEX = {t: i for i, t in enumerate(TAXON_CATEGORIES)}
+ACCESSION_COLUMN = "Virus GENBANK accession"
+SEQUENCE_ID_COLUMN = "VITAP sequence ID"
+
+
+def normalize_reference_id(reference_id):
+    """Normalize legacy versioned accessions without changing range-aware IDs."""
+    reference_id = str(reference_id).strip()
+    if "__" in reference_id:
+        return reference_id
+    return reference_id.split(".", 1)[0]
+
+
+def mapping_id_column(columns):
+    """Use range-aware IDs when available, with backward compatibility."""
+    if SEQUENCE_ID_COLUMN in columns:
+        return SEQUENCE_ID_COLUMN
+    if ACCESSION_COLUMN in columns:
+        return ACCESSION_COLUMN
+    raise KeyError(
+        f"ICTV mapping file requires {SEQUENCE_ID_COLUMN!r} or {ACCESSION_COLUMN!r}."
+    )
 
 
 def deplication_check(fasta_file: str):
@@ -233,18 +254,18 @@ def taxonomy_assigning(
     for r in gff_file.to_dicts():
         orf_number[str(r["id"])] = int(r["ORF_number"])
 
-    # ---- ICTV mapping: accession -> taxon ----
-    # Normalize accessions by stripping whitespace and version suffix (e.g. "U41758.1" -> "U41758")
-    # so that lookups are consistent regardless of whether the VMR CSV stores versioned accessions.
+    # ---- ICTV mapping: reference sequence ID -> taxon ----
+    # New databases use a range-aware VITAP sequence ID. Older databases fall
+    # back to the GenBank accession and continue to normalize version suffixes.
     accession_to_taxon = {}
-    ictv_key = "Virus GENBANK accession"
     with open(ictv_file, "r", newline="") as f:
         reader = csv.DictReader(f)
+        ictv_key = mapping_id_column(reader.fieldnames or [])
         for row in reader:
             acc = row.get(ictv_key, "")
             if acc is None:
                 continue
-            acc_normalized = str(acc).strip().split(".", 1)[0]
+            acc_normalized = normalize_reference_id(acc)
             accession_to_taxon[acc_normalized] = row.get(taxon_level)
 
     # ---- Read BLAST: qseqid sseqid bitscore ----
@@ -260,11 +281,8 @@ def taxonomy_assigning(
             bitscore = safe_float(bitscore_s)
 
             qgenome = qseqid.rsplit("_", 1)[0]
-            # Extract genome accession from protein sseqid (format: {genome_id}_{orf_num}).
-            # Step 1: strip the trailing ORF number with rsplit to handle genome IDs that
-            #         contain no dot (e.g. "AE006468_1" -> "AE006468").
-            # Step 2: strip the version suffix with split (e.g. "U41758.1" -> "U41758").
-            s_acc = sseqid.rsplit("_", 1)[0].split(".", 1)[0]
+            # Strip the trailing ORF number and normalize a legacy version suffix.
+            s_acc = normalize_reference_id(sseqid.rsplit("_", 1)[0])
             staxon = accession_to_taxon.get(s_acc)
 
             hit_type = "self_hit" if qseqid == sseqid else "other"
